@@ -136,12 +136,14 @@ def main():
 
     specs = [
         { "path": "Agreement.csv",
+          "area": "Agreement",
           "features": [
               ("VPolyagreement.Presence.v2", "bin", None),
               ("VPolyagreement.Presence.v1", "bin", None),
           ],
         },
         { "path": "Alienability.csv",
+          "area": "Alienability",
           "features": [
               ("NPLocusDistribution", "cat", None),
               ("NPPossClassificationType", "modbin", { "classificatory": False, "semantic": True }),
@@ -158,6 +160,7 @@ def main():
           ]
         },
         { "path": "Alignment_per_language.csv",
+          "area": "Alignment",
           "features": [
               ("AlignmentAgrAccDegree.binned3", "cat", None),
               ("AlignmentAgrAccDegree", None, None),   # ratio
@@ -191,6 +194,7 @@ def main():
           ]
         },
         { "path": "Clause_word_order.csv",
+          "area": "Clause Word Order",
           "features": [
               ("WordOrderAPLex", "cat", None),
               ("WordOrderAPBasicLex", "modbin", { "OA": False, "AO": True }),
@@ -221,6 +225,7 @@ def main():
           ]
         },
         { "path": "Clusivity.csv",
+          "area": "Clusivity",
           "features": [
               ("InclExclAsPerson.Presence", "bin", None),
               ("InclExclAny.Presence", None, None), # duplicate
@@ -229,6 +234,7 @@ def main():
           ]
         },
         { "path": "Gender.csv",
+          "area": "Gender",
           "features": [
               ("Gender.n", "count", None),
               ("Gender.binned4", None, None),  # duplicate
@@ -236,6 +242,7 @@ def main():
           ],
         },
         { "path": "GR_per_language.csv",
+          "area": "Grammatical Relations",
           "features": [
               ("CoArgSensitivityAgr.Presence", "bin", None),
               ("VAgreement.Presence.v1", "bin", None),
@@ -243,6 +250,7 @@ def main():
           ]
         },
         { "path": "Locus_per_language.csv",
+          "area": "Locus",
           "features": [
               ("LocusA.binned6", None, None),  # near-duplicate
               ("Locus.A.default.binned6", "cat", None),
@@ -416,6 +424,7 @@ def main():
           ],
         },
         { "path": "Markers_per_language.csv",
+          "area": "Markers",
           "features": [
               ("BehaviorCase.binned4", "cat", None),
               ("BehaviorNeg.binned4", "cat", None),
@@ -514,6 +523,7 @@ def main():
           ],
         },
         { "path": "Morpheme_types.csv",
+          "area": "Morpheme Types",
           "features": [
               ("Enclitic.Presence", "bin", None),
               ("Endoclitic.Presence", "bin", None),
@@ -527,6 +537,7 @@ def main():
           ],
         },
         { "path": "Morphology_per_language.csv",
+          "area": "Morphology",
           "features": [
               ("VAgreement.Presence.v2", "bin", None),
               ("Flexivity.Presence", "bin", None),
@@ -543,6 +554,7 @@ def main():
           ],
         },
         { "path": "NP_per_language.csv",
+          "area": "Noun Phrases",
           "features": [
               ("AdjAttrAgr.Presence", "bin", None),
               ("AdjAttrConstr.Presence", "bin", None),
@@ -555,22 +567,26 @@ def main():
           ],
         },
         { "path": "NP_word_order.csv",
+          "area": "Noun Phrases",
           "features": [
               ("WordOrderNPBasic", "cat", None),
           ],
         },
         { "path": "Numeral_classifiers.csv",
+          "area": "Numeral Classifiers",
           "features": [
               ("NumClass.n", "count", None),
               ("NumClass.Presence", "bin", None), # TRUE -> NumClass.n > 0
           ],
         },
         { "path": "Rhythm_per_language.csv",
+          "area": "Rhythm",
           "features": [
               ("RhythmType", "cat", None),
           ],
         },
         { "path": "Synthesis.csv",
+          "area": "Synthesis",
           "features": [
               ("VInlfCatSurveyComplete", None, None), # FALSE -> kill entries??
               ("VBipartiteStem.Presence", "bin", None),
@@ -599,6 +615,7 @@ def main():
           ],
         },
         { "path": "Valence_classes_per_language.csv",
+          "area": "Valence",
           "features": [
               ("ValClassesWithVerbsOfType.ability.Presence", "bin", None),
               ("ValClassesWithVerbsOfType.achieve.Presence", "bin", None),
@@ -671,6 +688,7 @@ def main():
           ],
         },
         { "path": "VAgreement.csv",
+          "area": "VAgreement",
           "features": [
               ("VAgrA.Presence", "bin", None),
               ("VAgrP.Presence", "bin", None),
@@ -678,6 +696,7 @@ def main():
           ],
         },
         { "path": "VInfl_categories.csv",
+          "area": "VInfl",
           "features": [
               ("VInflAktionsart.Presence", "bin", None),
               ("VInflApplicative.Presence", "bin", None),
@@ -725,6 +744,7 @@ def main():
           ],
         },
         { "path": "VInfl_counts_per_position.csv",
+          "area": "VInfl",
           "features": [
               ("VInflCatAndAgrIn.n", "count", None),
               ("VInflCatAndAgrPost.n", "count", None),
@@ -734,6 +754,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocategories.csv",
+          "area": "VInfl",
           "features": [
               ("macro.VInflClassification.Presence", "bin", None), # 2 types
               ("macro.VInflEvidential.Presence", "bin", None),
@@ -750,6 +771,7 @@ def main():
           ],
         },
         { "path": "VInfl_cat_postposed.csv",
+          "area": "VInfl",
           "features": [
               ("VInflAktionsart.Post.Presence", "bin", None),
               ("VInflApplicative.Post.Presence", "bin", None), # 2
@@ -797,6 +819,7 @@ def main():
           ],
         },
         { "path": "VInfl_cat_positions4.csv",
+          "area": "VInfl",
           "features": [
               ("VInflAktionsart.Position.binned4", "cat", None),
               ("VInflApplicative.Position.binned4", "cat", None), # 2
@@ -844,6 +867,7 @@ def main():
           ],
         },
         { "path": "VInfl_cat_positions.csv",
+          "area": "VInfl",
           "features": [  # do not create "modbin" because they will be removed for low coverage
               ("VInflAktionsart.Position", "cat", None),
               ("VInflApplicative.Position", "cat", None), # 2
@@ -891,6 +915,7 @@ def main():
           ],
         },
         { "path": "VInfl_cat_positions5.csv",
+          "area": "VInfl",
           "features": [
               ("VInflAktionsart.Position.binned5", "cat", None),
               ("VInflApplicative.Position.binned5", "cat", None), # 2
@@ -938,6 +963,7 @@ def main():
           ],
         },
         { "path": "VInfl_cat_preposed.csv",
+          "area": "VInfl",
           "features": [
               ("VInflAktionsart.Pre.Presence", "bin", None),
               ("VInflApplicative.Pre.Presence", "bin", None), # 2
@@ -985,6 +1011,7 @@ def main():
           ],
         },
         { "path": "VInfl_cat_multiexponence.csv",
+          "area": "VInfl",
           "features": [   # 1 type per feature
               ("multi.VInflAktionsart.Pre.Presence", "bin", None),
               ("multi.VInflApplicative.Pre.Presence", "bin", None),
@@ -1032,6 +1059,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocat_postposed.csv",
+          "area": "VInfl",
           "features": [
               ("macro.VInflClassification.Post.Presence", "bin", None), # 2 types
               ("macro.VInflEvidential.Post.Presence", None, None),
@@ -1048,6 +1076,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocat_position4.csv",
+          "area": "VInfl",
           "features": [
               ("macro.VInflClassification.Position.binned4", "cat", None), # 2 types
               ("macro.VInflEvidential.Position.binned4", None, None),
@@ -1064,6 +1093,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocat_position.csv",
+          "area": "VInfl",
           "features": [
               ("macro.VInflClassification.Position", "cat", None), # 2 types
               ("macro.VInflEvidential.Position", None, None),
@@ -1079,6 +1109,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocat_position5.csv",
+          "area": "VInfl",
           "features": [
               ("macro.VInflClassification.Position.binned5", "cat", None), # 2 types
               ("macro.VInflEvidential.Position.binned5", None, None),
@@ -1095,6 +1126,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocat_preposed.csv",
+          "area": "VInfl",
           "features": [
               ("macro.VInflClassification.Pre.Presence", "bin", None), # 2 types
               ("macro.VInflEvidential.Pre.Presence", None, None),
@@ -1111,6 +1143,7 @@ def main():
           ],
         },
         { "path": "VInfl_macrocat_multiexponence.csv",
+          "area": "VInfl",
           "features": [ # 1 type per feature
               ("macromulti.VInflClassification.Pre.Presence", None, None),
               ("macromulti.VInflEvidential.Pre.Presence", None, None),
@@ -1127,6 +1160,7 @@ def main():
           ],
         },
         { "path": "VAgr_postposed.csv",
+          "area": "VAgr",
           "features": [
               ("VAgrA.Post.Presence", "bin", None),
               ("VAgrP.Post.Presence", "bin", None),
@@ -1134,6 +1168,7 @@ def main():
           ],
         },
         { "path": "VAgr_position4.csv",
+          "area": "VAgr",
           "features": [
               ("VAgrA.Position.binned4", "cat", None),
               ("VAgrP.Position.binned4", "cat", None),
@@ -1141,6 +1176,7 @@ def main():
           ],
         },
         { "path": "VAgr_position.csv",
+          "area": "VAgr",
           "features": [
               ("VAgrA.Position", "cat", None),
               ("VAgrP.Position", "cat", None),
@@ -1149,6 +1185,7 @@ def main():
           ],
         },
         { "path": "VAgr_position5.csv",
+          "area": "VAgr",
           "features": [
               ("VAgrA.Position.binned5", "cat", None),
               ("VAgrP.Position.binned5", "cat", None),
@@ -1156,6 +1193,7 @@ def main():
           ],
         },
         { "path": "VAgr_preposed.csv",
+          "area": "VAgr",
           "features": [
               ("VAgrA.Pre.Presence", "bin", None),
               ("VAgrP.Pre.Presence", "bin", None),
@@ -1163,6 +1201,7 @@ def main():
           ],
         },
         { "path": "VAgr_multiexponence.csv",
+          "area": "VAgr",
           "features": [
               ("multi.VAgrA.Pre.Presence", "bin", None),
               ("multi.VAgrP.Pre.Presence", None, None),    # bin-min 2
@@ -1177,7 +1216,16 @@ def main():
         for i, (k, ftype, vmap) in enumerate(spec["features"]):
             if ftype is None:
                 continue
-            fstruct = { "size": -1, "annotation": { "name": k, "source": spec["path"], "orig_idx": i, "total": 0, "count": defaultdict(int) }}
+            fstruct = { "size": -1,
+                        "annotation": {
+                            "name": k,
+                            "source": spec["path"],
+                            "area": spec["area"],
+                            "orig_idx": i,
+                            "total": 0,
+                            "count": defaultdict(int),
+                        },
+            }
             if k in fname2struct:
                 sys.stderr.write("non-unique feature name\t{}\n".format(k))
                 exit(1)

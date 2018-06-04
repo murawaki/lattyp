@@ -40,6 +40,33 @@ def main():
     # sort first by suffix and then by main id
     flist_sorted = sorted(flist_raw, key=lambda x: x["annotation"]["name"][-1])
     flist_sorted = sorted(flist_sorted, key=lambda x: int(x["annotation"]["name"][:-1]))
+
+    # area
+    arealist = [
+        # area, start, end (inclusive)
+        ("Phonology", 1, 19),
+        ("Morphology", 20, 29),
+        ("Nominal Categories", 30, 57),
+        ("Nominal Syntax", 58, 64),
+        ("Verbal Categories", 65, 80),
+        ("Word Order", 81, 97),
+        ("Simple Clause", 98, 121),
+        ("Complex Sentences", 122, 128),
+        ("Lexicon", 129, 138),
+        ("Sign Languages", 139, 140),
+        ("Other", 141, 142),
+        ("Word Order", 143, 144),
+    ]
+    # assign area
+    for fstruct in flist_sorted:
+        area_n = int(fstruct["annotation"]["name"][0:-1])
+        for area, s, e in arealist:
+            if s <= area_n <= e:
+                fstruct["annotation"]["area"] = area
+                break
+        else:
+            sys.stderr.write("no area found for {}\n".format(fstruct["annotation"]["name"]))
+
     bad_features = {
         "10B Nasal Vowels in West Africa": "too specific",
         "39B Inclusive/Exclusive Forms in Pama-Nyungan": "too specific",
