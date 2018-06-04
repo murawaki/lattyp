@@ -7,7 +7,7 @@ LANGS := ../data/$(DATATYPE)/langs.json
 FLIST := ../data/$(DATATYPE)/flist.json
 OUTDIR := ../data/$(DATATYPE)/cv
 
-FNUM_FILE := $(OUTDIR)/fnum
+FNUM_FILE := ../data/$(DATATYPE)/fnum
 CVMAP := $(OUTDIR)/langs.cvmap.json
 
 NPB_KS := 50 100 250 500
@@ -28,11 +28,13 @@ TRAIN_OPTS := --maxanneal=100 --bias --norm_sigma=10.0 --gamma_scale=1.0 --resum
 ITER := 500
 SEED := --seed=2
 PYTHON := nice -19 python
+ITER_XZ := 100
 
 AUTO_OPTS := --norm_sigma=10.0 --gamma_scale=1.0 --burnin=500 --interval=5 --samples=500
 
-
 LAST_MAKEFILE = $(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))
+
+
 
 $(shell mkdir -p $(OUTDIR))
 
@@ -68,21 +70,33 @@ $(foreach i,$(shell seq 0 $(CV_MAX)), \
   $(eval $(call cv_main,$(OUTDIR)/langs,$(i))))
 
 
+
+##################################################
+#                  BASIC                         #
+##################################################
+
 $(OUTDIR)/langs.random.eval : $(LANGS) $(FLIST)
 	$(PYTHON) -mmv.cv.eval_mv $(SEED) --random $(LANGS) - $(FLIST) > $(OUTDIR)/langs.random.eval
+EVALS_BASIC += $(OUTDIR)/langs.random.eval
 EVALS += $(OUTDIR)/langs.random.eval
 
 $(OUTDIR)/langs.freq.eval : $(LANGS) $(HIDE_LIST)
 	sh -c 'for i in `seq 0 $(CV_MAX)`; do $(PYTHON) -mmv.cv.eval_mv $(SEED) --freq $(LANGS) $(OUTDIR)/langs.cv$${i}.json $(FLIST); done | perl -anle"\$$a+=\$$F[1];\$$b+=\$$F[2]; END{printf \"%f\\t%d\\t%d\\n\", \$$a / \$$b, \$$a, \$$b;}" > $(OUTDIR)/langs.freq.eval'
 
+EVALS_BASIC += $(OUTDIR)/langs.freq.eval
 EVALS += $(OUTDIR)/langs.freq.eval
 
 $(OUTDIR)/langs.mcr.eval : $(LANGS) $(MCR_LIST)
 	sh -c 'for i in `seq 0 $(CV_MAX)`; do $(PYTHON) -mmv.cv.eval_mv $(SEED) $(LANGS) $(OUTDIR)/langs.cv$${i}.filled.json -; done | perl -anle"\$$a+=\$$F[1];\$$b+=\$$F[2]; END{printf \"%f\\t%d\\t%d\\n\", \$$a / \$$b, \$$a, \$$b;}" > $(OUTDIR)/langs.mcr.eval'
 
+EVALS_BASIC += $(OUTDIR)/langs.mcr.eval
 EVALS += $(OUTDIR)/langs.mcr.eval
 
 
+
+##################################################
+#                   NPB                          #
+##################################################
 
 # cv_npb FILE_PREFIX CV_IDX K
 define cv_npb_main
@@ -117,21 +131,9 @@ $(foreach k,$(NPB_KS), \
 
 
 
-# cv_mda_train FILE_PREFIX K CV_IDX
-define cv_mda_train
-$(1)_K$(2)_cv$(3).pkl : $(OUTDIR)/langs.cv$(3).filled.json $(FLIST)
-	$(PYTHON) train_mda.py $(SEED) --iter=$(ITER) --cv --K=$(2) --output=$(1)_K$(2)_cv$(3).pkl $(OUTDIR)/langs.cv$(3).filled.json $(TRAIN_OPTS) $(FLIST) >> $(1)_K$(2)_cv$(3).log 2>&1 && cp $(1)_K$(2)_cv$(3).pkl.final $(1)_K$(2)_cv$(3).pkl
-
-MDAS += $(1)_K$(2)_cv$(3).pkl
-endef
-
-$(foreach k,$(MDA_KS), \
-  $(foreach i,$(shell seq 0 $(CV_MAX)), \
-    $(eval $(call cv_mda_train,$(OUTDIR)/$(MODEL_PREFIX),$(k),$(i)))))
-
-# TODO: merge -- eval
-
-
+##################################################
+#               AUTOLOGISTIC                     #
+##################################################
 
 # cv_auto_main FILE_PREFIX FID CV_IDX
 define cv_auto_main
@@ -145,14 +147,66 @@ $(foreach f,$(shell seq 0 $(FEAT_MAX)), \
   $(foreach i,$(shell seq 0 $(CV_MAX)), \
     $(eval $(call cv_auto_main,$(OUTDIR)/auto,$(f),$(i)))))
 
-
 al_main : $(AUTO_LIST)
 
 # recursive make; does not work?
 al : $(FNUM_FILE)
 	$(MAKE) -f $(LAST_MAKEFILE) al_main DATATYPE=$(DATATYPE) LANGS=$(LANGS) FLIST=$(FLIST) OUTDIR=$(OUTDIR) CV=$(CV) FNUM_FILE=$(FNUM_FILE) PYTHON="$(PYTHON)" SEED="$(SEED)" AUTO_OPTS="$(AUTO_OPTS)"
 
-# TODO: merge -- eval
+$(OUTDIR)/auto.eval : $(AUTO_LIST)
+	$(PYTHON) -mmv.merge_autologistic_results --cvout=$(OUTDIR)/auto.eval --detail=$(OUTDIR)/auto.results.json $(AUTO_LIST)
+
+EVALS += $(OUTDIR)/auto.eval
+
+
+
+##################################################
+#                   MDA                          #
+##################################################
+
+# cv_mda_train FILE_PREFIX K CV_IDX
+define cv_mda_train
+$(1)_K$(2)_cv$(3).pkl : $(OUTDIR)/langs.cv$(3).filled.json $(FLIST)
+	$(PYTHON) train_mda.py $(SEED) --iter=$(ITER) --cv --K=$(2) --output=$(1)_K$(2)_cv$(3).pkl $(OUTDIR)/langs.cv$(3).filled.json $(TRAIN_OPTS) $(FLIST) >> $(1)_K$(2)_cv$(3).log 2>&1 && cp $(1)_K$(2)_cv$(3).pkl.final $(1)_K$(2)_cv$(3).pkl
+
+MDAS += $(1)_K$(2)_cv$(3).pkl
+endef
+
+$(foreach k,$(MDA_KS), \
+  $(foreach i,$(shell seq 0 $(CV_MAX)), \
+    $(eval $(call cv_mda_train,$(OUTDIR)/$(MODEL_PREFIX),$(k),$(i)))))
+
+
+# cv_mda_sample_auto FILE_PREFIX K CV_IDX
+define cv_mda_sample_auto
+$(1)_K$(2)_cv$(3).xz.json.bz2 : $(1)_K$(2)_cv$(3).pkl
+	$(PYTHON) sample_auto.py $(SEED) --a_repeat=5 --iter=$(ITER_XZ) $(1)_K$(2)_cv$(3).pkl - | bzip2 -c > $(1)_K$(2)_cv$(3).xz.json.bz2
+
+SAMPLE_AUTO += $(1)_K$(2)_cv$(3).xz.json.bz2
+SAMPLE_XZ_$(2) += $(1)_K$(2)_cv$(3).xz.json.bz2
+SAMPLE_XZ_$(2)_$(3) += $(1)_K$(2)_cv$(3).xz.json.bz2
+
+$(1)_K$(2)_cv$(3).xz.merged.json : $(1)_K$(2)_cv$(3).xz.json.bz2
+	$(PYTHON) convert_auto_xz.py --burnin=0 --update --input=$(1)_K$(2)_cv$(3).xz.json.bz2 $(OUTDIR)/langs.cv$(3).filled.json $(FLIST) > $(1)_K$(2)_cv$(3).xz.merged.json
+
+SAMPLE_XZ_MERGED += $(1)_K$(2)_cv$(3).xz.merged.json
+SAMPLE_XZ_MERGED_$(2) += $(1)_K$(2)_cv$(3).xz.merged.json
+endef
+
+# cv_mda_eval FILE_PREFIX K
+define cv_mda_eval
+$(1)_K$(2).eval : $(SAMPLE_XZ_MERGED_$(2))
+	sh -c 'for i in `seq 0 $(CV_MAX)`; do $(PYTHON) -mmv.cv.eval_mv $(SEED) $(LANGS) $(1)_K$(2)_cv$$$${i}.xz.merged.json -; done | perl -anle"\$$$$a+=\$$$$F[1];\$$$$b+=\$$$$F[2]; END{printf \"%f\\t%d\\t%d\\n\", \$$$$a / \$$$$b, \$$$$a, \$$$$b;}" > $(1)_K$(2).eval'
+
+EVALS_MDA += $(1)_K$(2).eval
+EVALS += $(1)_K$(2).eval
+endef
+
+$(foreach k,$(MDA_KS), \
+  $(foreach i,$(shell seq 0 $(CV_MAX)), \
+     $(eval $(call cv_mda_sample_auto,$(OUTDIR)/$(MODEL_PREFIX),$(k),$(i)))))
+$(foreach k,$(MDA_KS), \
+  $(eval $(call cv_mda_eval,$(OUTDIR)/$(MODEL_PREFIX),$(k))))
 
 
 
@@ -164,12 +218,18 @@ filled : $(FILLED_LIST)
 
 mcr : $(OUTDIR)/langs.mcr.eval
 
+basic : $(EVALS_BASIC)
+
 npb : $(EVALS_NPB)
 
-mda : $(MDAS)
+auto : $(OUTDIR)/auto.eval
+
+mda_model : $(MDAS)
+
+mda : $(EVALS_MDA)
 
 clean :
 	rm -f $(OUTDIR)/langs*
 	rmdir --ignore-fail-on-non-empty $(OUTDIR)
 
-.PHONY : all clean hidden filled mcr npb mda al_main al
+.PHONY : all clean hidden filled mcr basic npb al_main al auto mda_model mda

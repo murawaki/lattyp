@@ -20,8 +20,9 @@ class MatrixDecompositionAutologistic(object):
     S_Z_H = 8
     S_Z_A = 9
 
-    HMC_L = 10
-    HMC_EPSILON = 0.05 # 0.00001
+    # backward compatibility
+    hmc_l = 10
+    hmc_epsilon = 0.05
 
     def __init__(self, mat, flist,
                  sigma=1.0,
@@ -34,9 +35,14 @@ class MatrixDecompositionAutologistic(object):
                  norm_sigma = 5.0,
                  gamma_shape = 1.0,
                  gamma_scale = 0.001,
+                 hmc_l = 10,
+                 hmc_epsilon = 0.05,
     ):
         self.mat = mat # X: L x P matrix
         self.flist = flist
+
+        self.hmc_l = hmc_l
+        self.hmc_epsilon = hmc_epsilon
 
         # L: # of langs
         # P: # of surface features
@@ -220,6 +226,7 @@ class MatrixDecompositionAutologistic(object):
         c_x_bin = [0, 0]
         c_x_cnt = [0, 0]
         c_z = [0, 0]
+        c_zx = [0, 0] # changed, total
         c_z_v = [0, 0]
         c_z_h = [0, 0]
         c_z_a = [0, 0]
@@ -240,8 +247,11 @@ class MatrixDecompositionAutologistic(object):
                 c_x_cnt[changed] += 1
             elif t_type == self.S_Z:
                 l, k = t_val
-                changed = self.sample_z(l, k, itemp=itemp)
+                # changed = self.sample_z(l, k, itemp=itemp)
+                changed, c, t = self.sample_zx(l, k, itemp=itemp)
                 c_z[changed] += 1
+                c_zx[0] += c
+                c_zx[1] += t
             elif t_type == self.S_W_HMC:
                 changed = self.sample_w_hmc(t_val)
                 c_w_hmc[changed] += 1
@@ -264,6 +274,8 @@ class MatrixDecompositionAutologistic(object):
         if sum(c_x_cnt) > 0:
             sys.stderr.write("\tx_cnt\t{}\n".format(float(c_x_cnt[1]) / sum(c_x_cnt)))
         sys.stderr.write("\tz\t{}\n".format(float(c_z[1]) / sum(c_z)))
+        if c_zx[1] > 0:
+            sys.stderr.write("\tzx\t{}\n".format(float(c_zx[0]) / c_zx[1]))
         if sum(c_w_hmc) > 0:
             sys.stderr.write("\tw_hmc\t{}\n".format(float(c_w_hmc[1]) / sum(c_w_hmc)))
         if not self.only_alphas:
@@ -356,6 +368,75 @@ class MatrixDecompositionAutologistic(object):
             return True
         else:
             return False
+
+    def sample_zx(self, l, k, itemp=1.0):
+        assert(not self.bias or not k == 0)
+        z_old = self.zmat[k,l]
+        logprob0, logprob1 = 0.0, 0.0
+        if not self.only_alphas:
+            vcount = np.bincount(self.zmat[k,self.vnet[l]], minlength=2)
+            logprob0 += self.vks[k] * vcount[0]
+            logprob1 += self.vks[k] * vcount[1]
+            hcount = np.bincount(self.zmat[k,self.hnet[l]], minlength=2)
+            logprob0 += self.hks[k] * hcount[0]
+            logprob1 += self.hks[k] * hcount[1]
+        logprob1 += self.alphas[k]
+
+        theta_new = np.empty_like(self.theta[l,:])
+        theta_tilde_new = np.copy(self.theta_tilde[l,:])
+        if z_old == False:
+            # proposal: 1
+            theta_tilde_new += self.wmat[k,:]
+            logprob_old, logprob_new = logprob0, logprob1
+        else:
+            # proposal: 0
+            theta_tilde_new -= self.wmat[k,:]
+            logprob_old, logprob_new = logprob1, logprob0
+        xs_new = self.mat[l,:].copy()
+        for p, (x, is_missing) in enumerate(zip(self.mat[l,:], self.mvs[l,:])):
+            j_start, T = self.p2jT[p]
+            if self.flist[p]["type"] == "cat":
+                e_theta_tilde = np.exp(theta_tilde_new[j_start:j_start+T] - theta_tilde_new[j_start:j_start+T].max())
+                theta_new[j_start:j_start+T] = e_theta_tilde / e_theta_tilde.sum()
+                if is_missing:
+                    xs_new[p] = np.random.choice(T, p=theta_new[j_start:j_start+T])
+                else:
+                    logprob_old += np.log(self.theta[l,j_start+x] + 1E-20)
+                    logprob_new += np.log(theta_new[j_start+xs_new[p]] + 1E-20)
+            elif self.flist[p]["type"] == "bin":
+                theta_new[j_start] = 0.5 * np.tanh(0.5 * theta_tilde_new[j_start]) + 0.5
+                if is_missing:
+                    xs_new[p] = np.random.random() < theta_new[j_start]
+                else:
+                    logprob_old += np.log((self.theta[l,j_start] if x == 1 else (1.0 - self.theta[l,j_start])) + 1E-20)
+                    logprob_new += np.log((theta_new[j_start] if xs_new[p] == 1 else (1.0 - theta_new[j_start])) + 1E-20)
+            elif self.flist[p]["type"] == "count":
+                theta_new[j_start] = np.fmax(theta_tilde_new[j_start], 0) + np.log1p(np.exp(-np.fabs(theta_tilde_new[j_start])))
+                if is_missing:
+                    xs_new[p] = np.random.poisson(lam=theta_new[j_start])
+                else:
+                    logprob_old += x * np.log(self.theta[l,j_start] + 1E-20)
+                    logprob_new += xs_new[p] * np.log(theta_new[j_start] + 1E-20)
+            else:
+                raise NotImplementedError
+        if itemp != 1.0:
+            logprob_old *= itemp
+            logprob_new *= itemp
+        accepted = np.bool_(rand_partition_log((logprob_old, logprob_new)))
+        if accepted:
+            if z_old == False:
+                # 0 -> 1
+                self.zmat[k,l] = True
+            else:
+                # 1 -> 0
+                self.zmat[k,l] = False
+            self.theta_tilde[l,:] = theta_tilde_new
+            self.theta[l,:] = theta_new
+            changed = (self.mat[l,:] != xs_new).sum()
+            self.mat[l,:] = xs_new
+            return True, changed, self.mvs[l,:].sum()
+        else:
+            return False, 0, self.mvs[l,:].sum()
 
     def sample_autologistic(self, t_type, k):
         logr = 0.0
@@ -562,7 +643,7 @@ class MatrixDecompositionAutologistic(object):
                     else:
                         raise NotImplementedError                    
             return grad
-        accepted, Mvect = hmc(U, gradU, self.HMC_EPSILON, self.HMC_L, self.wmat[k])
+        accepted, Mvect = hmc(U, gradU, self.hmc_epsilon, self.hmc_l, self.wmat[k])
         if accepted:
             # update theta_tilde
             for l in range(self.L):

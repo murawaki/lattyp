@@ -117,6 +117,9 @@ def main():
                         help='shape of Gamma prior for v and h')
     parser.add_argument('--gamma_scale', type=float, default=0.001,
                         help='scale of Gamma prior for v and h')
+    parser.add_argument("--hmc_l", metavar="INT", type=int, default=10)
+    parser.add_argument('--hmc_epsilon', type=float, default=0.05,
+                        help='HMC epsilon')
     parser.add_argument("--maxanneal", metavar="INT", type=int, default=0)
     parser.add_argument("--cv", action="store_true", default=False,
                         help="some features are intentionally hidden (but kept as \"catvect_orig\")")
@@ -168,7 +171,9 @@ def main():
                                               drop_hs=args.drop_hs,
                                               norm_sigma=args.norm_sigma,
                                               gamma_shape=args.gamma_shape,
-                                              gamma_scale=args.gamma_scale)
+                                              gamma_scale=args.gamma_scale,
+                                              hmc_l=args.hmc_l,
+                                              hmc_epsilon=args.hmc_epsilon)
         if args.cv:
             mda.cvlist = create_cvlist(langs)
         mda.init_with_clusters()
