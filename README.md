@@ -93,3 +93,46 @@ make -j 20 -f eval_mv.make DATATYPE=autotyp CV=10 MODEL_PREFIX=mda_dh TRAIN_OPTS
 make -j 20 -f eval_mv.make DATATYPE=autotyp CV=10 MODEL_PREFIX=mda_oa TRAIN_OPTS="--maxanneal=100 --iter=500 --bias --norm_sigma=10.0 --gamma_scale=1.0 --resume_if --only_alphas" mda
 make -j 100 -f eval_mv.make al DATATYPE=autotyp CV=10
 ```
+
+
+# Bayesian Analysis of Correlated Evolution Involving Multiple Discrete Features
+
+## About
+
+Yugo Murawaki. Analyzing Correlated Evolution of Multiple Features Using Latent Representations. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP2018), pp. ??-??, Brussels, Belgium, 2018.11.4. (to appear (oral)).
+
+## Preprocessing
+
+- convert Glottolog trees
+
+```sh
+python newick_tree.py ../data/glottolog/tree_glottolog_newick.txt ../data/glottolog/trees_all.pkl
+```
+
+- merge Glottolog trees into WALS languages
+
+```sh
+python merge_glottolog.py --npriors ../data/node_priors.json  ../data/wals/langs.json ../data/glottolog/trees_all.pkl ../data/wals/trees_attached.pkl
+```
+
+## Train the model
+
+- the main inference
+
+```sh
+nice -19 python train_bin_ctmc.py --has_bias --resume_if --seed=0 --npriors ../data/node_priors.json ../data/wals/trees_attached.pkl ../data/wals/mda_K100.0.xz.merged.json ../data/wals/paramevo_K100.0.tree.pkl 2>&1 | tee -a ../data/wals/paramevo_K100.0.tree.log
+```
+
+- collect samples
+
+```sh
+nice -19 python train_bin_ctmc.py --iter=1100 --save_interval=10 --has_bias --resume ../data/wals/paramevo_K100.0.tree.pkl.final --seed=0 --npriors ../data/node_priors.json ../data/wals/trees_attached.pkl ../data/wals/mda_K100.0.xz.merged.json ../data/wals/paramevo_K100.0.tree_plus.pkl 2>&1 | tee -a ../data/wals/paramevo_K100.0.tree_plus.log
+```
+
+- estimate CTMC parameters for the surface feature
+
+```sh
+nice -19 python train_surface_ctmc.py --seed=0 ../data/wals/paramevo_K100.0.tree.pkl.final ../data/wals/flist.json ../data/wals/mda_K100.0.xz.merged.json ../data/wals/paramevo_K100.0.surface_tree.pkl 2>&1 | tee ../data/wals/paramevo_K100.0.surface_tree.log
+```
+
+(TODO) clean up a Jupyter Notebook (used for further analysis) and add it to the repository
