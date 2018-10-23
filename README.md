@@ -5,7 +5,7 @@
 - Python3
   - numpy
 - R (for missing data imputation)
-  - missMDA package
+  - missMDA package (required for now but it is not difficult to remove dependency on it)
   - NPBayesImpute (only for comparison)
  
 ## Preprocessing
@@ -99,7 +99,7 @@ make -j 100 -f eval_mv.make al DATATYPE=autotyp CV=10
 
 ## About
 
-Yugo Murawaki. Analyzing Correlated Evolution of Multiple Features Using Latent Representations. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP2018), pp. ??-??, Brussels, Belgium, 2018.11.4. (to appear (oral)).
+Yugo Murawaki. Analyzing Correlated Evolution of Multiple Features Using Latent Representations. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP2018), pp. ??-??, Brussels, Belgium, 2018. (to appear (oral)).
 
 ## Preprocessing
 
@@ -109,7 +109,7 @@ Yugo Murawaki. Analyzing Correlated Evolution of Multiple Features Using Latent 
 python newick_tree.py ../data/glottolog/tree_glottolog_newick.txt ../data/glottolog/trees_all.pkl
 ```
 
-- merge Glottolog trees into WALS languages
+- combine WALS languages and Glottolog trees
 
 ```sh
 python merge_glottolog.py --npriors ../data/node_priors.json  ../data/wals/langs.json ../data/glottolog/trees_all.pkl ../data/wals/trees_attached.pkl
