@@ -99,7 +99,7 @@ make -j 100 -f eval_mv.make al DATATYPE=autotyp CV=10
 
 ## About
 
-Yugo Murawaki. Analyzing Correlated Evolution of Multiple Features Using Latent Representations. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP2018), pp. ??-??, Brussels, Belgium, 2018. (to appear (oral)).
+Yugo Murawaki. [Analyzing Correlated Evolution of Multiple Features Using Latent Representations](http://aclweb.org/anthology/D18-1468). In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP2018), pp. 4371-4382, Brussels, Belgium, 2018.
 
 ## Preprocessing
 
