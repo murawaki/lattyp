@@ -4,6 +4,7 @@
 
 - Python3
   - numpy
+  - scipy
 - R (for missing data imputation)
   - missMDA package (required for now but it is not difficult to remove dependency on it)
   - NPBayesImpute (only for comparison)
@@ -37,10 +38,20 @@ TODO: Remove the dependency on missMDA as our model is now insensitive to initia
 ```sh
 git clone git@github.com:autotyp/autotyp-data.git
 ```
+or if you do not have a github account with SSH keys, try
+```sh
+git clone https://github.com/autotyp/autotyp-data.git
+```
+
+- (optional) for replicability, you may want to try the same version
+```sh
+git checkout 98cae32c387bfe0c7fb1b7151070d834b120a0f1
+```
 
 - Convert the data into two JSON files
 
 ```sh
+mkdir -p ../data/autotyp
 python format_autotyp.py ~/download/autotyp-data ../data/autotyp/langs.json ../data/autotyp/flist.json
 ```
 
@@ -54,7 +65,7 @@ python -mmv.tsv2json ../data/autotyp/langs.json ../data/autotyp/langs.filled.tsv
  
 ## Run the model
 
-- The hyperparameter settings must be changed properly.
+- Perform posterior inference. The hyperparameter settings must be changed properly. Note that the inference is extremely slow (1-2 hours per iteration for WALS with K=100) and linear in time with K.
 
 ```sh
 python train_mda.py --seed=10 --K=100 --iter=1000 --bias --hmc_epsilon=0.025 --maxanneal=100 --norm_sigma=10.0 --gamma_scale=1.0 --resume_if --output ../data/wals/mda_K100.pkl ../data/wals/langs.filled.json ../data/wals/flist.json

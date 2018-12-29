@@ -1,0 +1,3830 @@
+[
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "1A Consonant Inventories",
+            "label2vid": {
+                "1 Small": 0,
+                "2 Moderately small": 1,
+                "3 Average": 2,
+                "4 Moderately large": 3,
+                "5 Large": 4
+            },
+            "name": "1A",
+            "orig_idx": 0,
+            "vid2label": [
+                "1 Small",
+                "2 Moderately small",
+                "3 Average",
+                "4 Moderately large",
+                "5 Large"
+            ]
+        },
+        "fid": 0,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "2A Vowel Quality Inventories",
+            "label2vid": {
+                "1 Small (2-4)": 0,
+                "2 Average (5-6)": 1,
+                "3 Large (7-14)": 2
+            },
+            "name": "2A",
+            "orig_idx": 1,
+            "vid2label": [
+                "1 Small (2-4)",
+                "2 Average (5-6)",
+                "3 Large (7-14)"
+            ]
+        },
+        "fid": 1,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "3A Consonant-Vowel Ratio",
+            "label2vid": {
+                "1 Low": 0,
+                "2 Moderately low": 1,
+                "3 Average": 2,
+                "4 Moderately high": 3,
+                "5 High": 4
+            },
+            "name": "3A",
+            "orig_idx": 2,
+            "vid2label": [
+                "1 Low",
+                "2 Moderately low",
+                "3 Average",
+                "4 Moderately high",
+                "5 High"
+            ]
+        },
+        "fid": 2,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "4A Voicing in Plosives and Fricatives",
+            "label2vid": {
+                "1 No voicing contrast": 0,
+                "2 In plosives alone": 1,
+                "3 In fricatives alone": 2,
+                "4 In both plosives and fricatives": 3
+            },
+            "name": "4A",
+            "orig_idx": 3,
+            "vid2label": [
+                "1 No voicing contrast",
+                "2 In plosives alone",
+                "3 In fricatives alone",
+                "4 In both plosives and fricatives"
+            ]
+        },
+        "fid": 3,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "5A Voicing and Gaps in Plosive Systems",
+            "label2vid": {
+                "1 Other": 0,
+                "2 None missing in /p t k b d g/": 1,
+                "3 Missing /p/": 2,
+                "4 Missing /g/": 3,
+                "5 Both missing": 4
+            },
+            "name": "5A",
+            "orig_idx": 4,
+            "vid2label": [
+                "1 Other",
+                "2 None missing in /p t k b d g/",
+                "3 Missing /p/",
+                "4 Missing /g/",
+                "5 Both missing"
+            ]
+        },
+        "fid": 4,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "6A Uvular Consonants",
+            "label2vid": {
+                "1 None": 0,
+                "2 Uvular stops only": 1,
+                "3 Uvular continuants only": 2,
+                "4 Uvular stops and continuants": 3
+            },
+            "name": "6A",
+            "orig_idx": 5,
+            "vid2label": [
+                "1 None",
+                "2 Uvular stops only",
+                "3 Uvular continuants only",
+                "4 Uvular stops and continuants"
+            ]
+        },
+        "fid": 5,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "7A Glottalized Consonants",
+            "label2vid": {
+                "1 No glottalized consonants": 0,
+                "2 Ejectives only": 1,
+                "3 Implosives only": 2,
+                "4 Glottalized resonants only": 3,
+                "5 Ejectives and implosives": 4,
+                "6 Ejectives and glottalized resonants": 5,
+                "7 Implosives and glottalized resonants": 6,
+                "8 Ejectives, implosives, and glottalized resonants": 7
+            },
+            "name": "7A",
+            "orig_idx": 6,
+            "vid2label": [
+                "1 No glottalized consonants",
+                "2 Ejectives only",
+                "3 Implosives only",
+                "4 Glottalized resonants only",
+                "5 Ejectives and implosives",
+                "6 Ejectives and glottalized resonants",
+                "7 Implosives and glottalized resonants",
+                "8 Ejectives, implosives, and glottalized resonants"
+            ]
+        },
+        "fid": 6,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "8A Lateral Consonants",
+            "label2vid": {
+                "1 No laterals": 0,
+                "2 /l/, no obstruent laterals": 1,
+                "3 Laterals, but no /l/, no obstruent laterals": 2,
+                "4 /l/ and lateral obstruent": 3,
+                "5 No /l/, but lateral obstruents": 4
+            },
+            "name": "8A",
+            "orig_idx": 7,
+            "vid2label": [
+                "1 No laterals",
+                "2 /l/, no obstruent laterals",
+                "3 Laterals, but no /l/, no obstruent laterals",
+                "4 /l/ and lateral obstruent",
+                "5 No /l/, but lateral obstruents"
+            ]
+        },
+        "fid": 7,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "9A The Velar Nasal",
+            "label2vid": {
+                "1 Initial velar nasal": 0,
+                "2 No initial velar nasal": 1,
+                "3 No velar nasal": 2
+            },
+            "name": "9A",
+            "orig_idx": 8,
+            "vid2label": [
+                "1 Initial velar nasal",
+                "2 No initial velar nasal",
+                "3 No velar nasal"
+            ]
+        },
+        "fid": 8,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "10A Vowel Nasalization",
+            "label2vid": {
+                "1 Contrast present": 0,
+                "2 Contrast absent": 1
+            },
+            "name": "10A",
+            "orig_idx": 9,
+            "vid2label": [
+                "1 Contrast present",
+                "2 Contrast absent"
+            ]
+        },
+        "fid": 9,
+        "size": 2,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "11A Front Rounded Vowels",
+            "label2vid": {
+                "1 None": 0,
+                "2 High and mid": 1,
+                "3 High only": 2,
+                "4 Mid only": 3
+            },
+            "name": "11A",
+            "orig_idx": 10,
+            "vid2label": [
+                "1 None",
+                "2 High and mid",
+                "3 High only",
+                "4 Mid only"
+            ]
+        },
+        "fid": 10,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "12A Syllable Structure",
+            "label2vid": {
+                "1 Simple": 0,
+                "2 Moderately complex": 1,
+                "3 Complex": 2
+            },
+            "name": "12A",
+            "orig_idx": 11,
+            "vid2label": [
+                "1 Simple",
+                "2 Moderately complex",
+                "3 Complex"
+            ]
+        },
+        "fid": 11,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "13A Tone",
+            "label2vid": {
+                "1 No tones": 0,
+                "2 Simple tone system": 1,
+                "3 Complex tone system": 2
+            },
+            "name": "13A",
+            "orig_idx": 12,
+            "vid2label": [
+                "1 No tones",
+                "2 Simple tone system",
+                "3 Complex tone system"
+            ]
+        },
+        "fid": 12,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "14A Fixed Stress Locations",
+            "label2vid": {
+                "1 No fixed stress": 0,
+                "2 Initial": 1,
+                "3 Second": 2,
+                "4 Third": 3,
+                "5 Antepenultimate": 4,
+                "6 Penultimate": 5,
+                "7 Ultimate": 6
+            },
+            "name": "14A",
+            "orig_idx": 13,
+            "vid2label": [
+                "1 No fixed stress",
+                "2 Initial",
+                "3 Second",
+                "4 Third",
+                "5 Antepenultimate",
+                "6 Penultimate",
+                "7 Ultimate"
+            ]
+        },
+        "fid": 13,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "15A Weight-Sensitive Stress",
+            "label2vid": {
+                "1 Left-edge: First or second": 0,
+                "2 Left-oriented: One of the first three": 1,
+                "3 Right-edge: Ultimate or penultimate": 2,
+                "4 Right-oriented: One of the last three": 3,
+                "5 Unbounded: Stress can be anywhere": 4,
+                "6 Combined: Right-edge and unbounded": 5,
+                "7 Not predictable": 6,
+                "8 Fixed stress (no weight-sensitivity)": 7
+            },
+            "name": "15A",
+            "orig_idx": 14,
+            "vid2label": [
+                "1 Left-edge: First or second",
+                "2 Left-oriented: One of the first three",
+                "3 Right-edge: Ultimate or penultimate",
+                "4 Right-oriented: One of the last three",
+                "5 Unbounded: Stress can be anywhere",
+                "6 Combined: Right-edge and unbounded",
+                "7 Not predictable",
+                "8 Fixed stress (no weight-sensitivity)"
+            ]
+        },
+        "fid": 14,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "16A Weight Factors in Weight-Sensitive Stress Systems",
+            "label2vid": {
+                "1 No weight": 0,
+                "2 Long vowel": 1,
+                "3 Coda consonant": 2,
+                "4 Long vowel or coda consonant": 3,
+                "5 Prominence": 4,
+                "6 Lexical stress": 5,
+                "7 Combined": 6
+            },
+            "name": "16A",
+            "orig_idx": 15,
+            "vid2label": [
+                "1 No weight",
+                "2 Long vowel",
+                "3 Coda consonant",
+                "4 Long vowel or coda consonant",
+                "5 Prominence",
+                "6 Lexical stress",
+                "7 Combined"
+            ]
+        },
+        "fid": 15,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "17A Rhythm Types",
+            "label2vid": {
+                "1 Trochaic": 0,
+                "2 Iambic": 1,
+                "3 Dual: both trochaic and iambic": 2,
+                "4 Undetermined": 3,
+                "5 No rhythmic stress": 4
+            },
+            "name": "17A",
+            "orig_idx": 16,
+            "vid2label": [
+                "1 Trochaic",
+                "2 Iambic",
+                "3 Dual: both trochaic and iambic",
+                "4 Undetermined",
+                "5 No rhythmic stress"
+            ]
+        },
+        "fid": 16,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "18A Absence of Common Consonants",
+            "label2vid": {
+                "1 All present": 0,
+                "2 No bilabials": 1,
+                "3 No fricatives": 2,
+                "4 No nasals": 3,
+                "5 No bilabials or nasals": 4,
+                "6 No fricatives or nasals": 5
+            },
+            "name": "18A",
+            "orig_idx": 17,
+            "vid2label": [
+                "1 All present",
+                "2 No bilabials",
+                "3 No fricatives",
+                "4 No nasals",
+                "5 No bilabials or nasals",
+                "6 No fricatives or nasals"
+            ]
+        },
+        "fid": 17,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Phonology",
+            "fullname": "19A Presence of Uncommon Consonants",
+            "label2vid": {
+                "1 None": 0,
+                "2 Clicks": 1,
+                "3 Labial-velars": 2,
+                "4 Pharyngeals": 3,
+                "5 'Th' sounds": 4,
+                "6 Clicks, pharyngeals, and 'th'": 5,
+                "7 Pharyngeals and \"th\"": 6
+            },
+            "name": "19A",
+            "orig_idx": 18,
+            "vid2label": [
+                "1 None",
+                "2 Clicks",
+                "3 Labial-velars",
+                "4 Pharyngeals",
+                "5 'Th' sounds",
+                "6 Clicks, pharyngeals, and 'th'",
+                "7 Pharyngeals and \"th\""
+            ]
+        },
+        "fid": 18,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "20A Fusion of Selected Inflectional Formatives",
+            "label2vid": {
+                "1 Exclusively concatenative": 0,
+                "2 Exclusively isolating": 1,
+                "3 Exclusively tonal": 2,
+                "4 Tonal/isolating": 3,
+                "5 Tonal/concatenative": 4,
+                "6 Ablaut/concatenative": 5,
+                "7 Isolating/concatenative": 6
+            },
+            "name": "20A",
+            "orig_idx": 19,
+            "vid2label": [
+                "1 Exclusively concatenative",
+                "2 Exclusively isolating",
+                "3 Exclusively tonal",
+                "4 Tonal/isolating",
+                "5 Tonal/concatenative",
+                "6 Ablaut/concatenative",
+                "7 Isolating/concatenative"
+            ]
+        },
+        "fid": 19,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "21A Exponence of Selected Inflectional Formatives",
+            "label2vid": {
+                "1 Monoexponential case": 0,
+                "2 Case + number": 1,
+                "3 Case + referentiality": 2,
+                "4 Case + TAM": 3,
+                "5 No case": 4
+            },
+            "name": "21A",
+            "orig_idx": 20,
+            "vid2label": [
+                "1 Monoexponential case",
+                "2 Case + number",
+                "3 Case + referentiality",
+                "4 Case + TAM",
+                "5 No case"
+            ]
+        },
+        "fid": 20,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "21B Exponence of Tense-Aspect-Mood Inflection",
+            "label2vid": {
+                "1 monoexponential TAM": 0,
+                "2 TAM+agreement": 1,
+                "3 TAM+agreement+diathesis": 2,
+                "4 TAM+agreement+construct": 3,
+                "5 TAM+polarity": 4,
+                "6 no TAM": 5
+            },
+            "name": "21B",
+            "orig_idx": 187,
+            "vid2label": [
+                "1 monoexponential TAM",
+                "2 TAM+agreement",
+                "3 TAM+agreement+diathesis",
+                "4 TAM+agreement+construct",
+                "5 TAM+polarity",
+                "6 no TAM"
+            ]
+        },
+        "fid": 21,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "23A Locus of Marking in the Clause",
+            "label2vid": {
+                "1 Head marking": 0,
+                "2 Dependent marking": 1,
+                "3 Double marking": 2,
+                "4 No marking": 3,
+                "5 Other": 4
+            },
+            "name": "23A",
+            "orig_idx": 22,
+            "vid2label": [
+                "1 Head marking",
+                "2 Dependent marking",
+                "3 Double marking",
+                "4 No marking",
+                "5 Other"
+            ]
+        },
+        "fid": 22,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "24A Locus of Marking in Possessive Noun Phrases",
+            "label2vid": {
+                "1 Head marking": 0,
+                "2 Dependent marking": 1,
+                "3 Double marking": 2,
+                "4 No marking": 3,
+                "5 Other": 4
+            },
+            "name": "24A",
+            "orig_idx": 23,
+            "vid2label": [
+                "1 Head marking",
+                "2 Dependent marking",
+                "3 Double marking",
+                "4 No marking",
+                "5 Other"
+            ]
+        },
+        "fid": 23,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "25A Locus of Marking: Whole-language Typology",
+            "label2vid": {
+                "1 Head-marking": 0,
+                "2 Dependent-marking": 1,
+                "3 Double-marking": 2,
+                "4 Zero-marking": 3,
+                "5 Inconsistent or other": 4
+            },
+            "name": "25A",
+            "orig_idx": 24,
+            "vid2label": [
+                "1 Head-marking",
+                "2 Dependent-marking",
+                "3 Double-marking",
+                "4 Zero-marking",
+                "5 Inconsistent or other"
+            ]
+        },
+        "fid": 24,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "25B Zero Marking of A and P Arguments",
+            "label2vid": {
+                "1 Zero-marking": 1,
+                "2 Non-zero marking": 0
+            },
+            "name": "25B",
+            "orig_idx": 186,
+            "vid2label": [
+                "2 Non-zero marking",
+                "1 Zero-marking"
+            ]
+        },
+        "fid": 25,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "26A Prefixing vs. Suffixing in Inflectional Morphology",
+            "label2vid": {
+                "1 Little affixation": 0,
+                "2 Strongly suffixing": 1,
+                "3 Weakly suffixing": 2,
+                "4 Equal prefixing and suffixing": 3,
+                "5 Weakly prefixing": 4,
+                "6 Strong prefixing": 5
+            },
+            "name": "26A",
+            "orig_idx": 25,
+            "vid2label": [
+                "1 Little affixation",
+                "2 Strongly suffixing",
+                "3 Weakly suffixing",
+                "4 Equal prefixing and suffixing",
+                "5 Weakly prefixing",
+                "6 Strong prefixing"
+            ]
+        },
+        "fid": 26,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "27A Reduplication",
+            "label2vid": {
+                "1 Productive full and partial reduplication": 0,
+                "2 Full reduplication only": 1,
+                "3 No productive reduplication": 2
+            },
+            "name": "27A",
+            "orig_idx": 26,
+            "vid2label": [
+                "1 Productive full and partial reduplication",
+                "2 Full reduplication only",
+                "3 No productive reduplication"
+            ]
+        },
+        "fid": 27,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "28A Case Syncretism",
+            "label2vid": {
+                "1 No case marking": 0,
+                "2 Core cases only": 1,
+                "3 Core and non-core": 2,
+                "4 No syncretism": 3
+            },
+            "name": "28A",
+            "orig_idx": 27,
+            "vid2label": [
+                "1 No case marking",
+                "2 Core cases only",
+                "3 Core and non-core",
+                "4 No syncretism"
+            ]
+        },
+        "fid": 28,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Morphology",
+            "fullname": "29A Syncretism in Verbal Person/Number Marking",
+            "label2vid": {
+                "1 No subject person/number marking": 0,
+                "2 Syncretic": 1,
+                "3 Not syncretic": 2
+            },
+            "name": "29A",
+            "orig_idx": 28,
+            "vid2label": [
+                "1 No subject person/number marking",
+                "2 Syncretic",
+                "3 Not syncretic"
+            ]
+        },
+        "fid": 29,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "30A Number of Genders",
+            "label2vid": {
+                "1 None": 0,
+                "2 Two": 1,
+                "3 Three": 2,
+                "4 Four": 3,
+                "5 Five or more": 4
+            },
+            "name": "30A",
+            "orig_idx": 29,
+            "vid2label": [
+                "1 None",
+                "2 Two",
+                "3 Three",
+                "4 Four",
+                "5 Five or more"
+            ]
+        },
+        "fid": 30,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "31A Sex-based and Non-sex-based Gender Systems",
+            "label2vid": {
+                "1 No gender": 0,
+                "2 Sex-based": 1,
+                "3 Non-sex-based": 2
+            },
+            "name": "31A",
+            "orig_idx": 30,
+            "vid2label": [
+                "1 No gender",
+                "2 Sex-based",
+                "3 Non-sex-based"
+            ]
+        },
+        "fid": 31,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "32A Systems of Gender Assignment",
+            "label2vid": {
+                "1 No gender": 0,
+                "2 Semantic": 1,
+                "3 Semantic and formal": 2
+            },
+            "name": "32A",
+            "orig_idx": 31,
+            "vid2label": [
+                "1 No gender",
+                "2 Semantic",
+                "3 Semantic and formal"
+            ]
+        },
+        "fid": 32,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "33A Coding of Nominal Plurality",
+            "label2vid": {
+                "1 Plural prefix": 0,
+                "2 Plural suffix": 1,
+                "3 Plural stem change": 2,
+                "4 Plural tone": 3,
+                "5 Plural complete reduplication": 4,
+                "6 Mixed morphological plural": 5,
+                "7 Plural word": 6,
+                "8 Plural clitic": 7,
+                "9 No plural": 8
+            },
+            "name": "33A",
+            "orig_idx": 32,
+            "vid2label": [
+                "1 Plural prefix",
+                "2 Plural suffix",
+                "3 Plural stem change",
+                "4 Plural tone",
+                "5 Plural complete reduplication",
+                "6 Mixed morphological plural",
+                "7 Plural word",
+                "8 Plural clitic",
+                "9 No plural"
+            ]
+        },
+        "fid": 33,
+        "size": 9,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "34A Occurrence of Nominal Plurality",
+            "label2vid": {
+                "1 No nominal plural": 0,
+                "2 Only human nouns, optional": 1,
+                "3 Only human nouns, obligatory": 2,
+                "4 All nouns, always optional": 3,
+                "5 All nouns, optional in inanimates": 4,
+                "6 All nouns, always obligatory": 5
+            },
+            "name": "34A",
+            "orig_idx": 33,
+            "vid2label": [
+                "1 No nominal plural",
+                "2 Only human nouns, optional",
+                "3 Only human nouns, obligatory",
+                "4 All nouns, always optional",
+                "5 All nouns, optional in inanimates",
+                "6 All nouns, always obligatory"
+            ]
+        },
+        "fid": 34,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "35A Plurality in Independent Personal Pronouns",
+            "label2vid": {
+                "1 No independent subject pronouns": 0,
+                "2 Number-indifferent pronouns": 1,
+                "3 Person-number affixes": 2,
+                "4 Person-number stem": 3,
+                "5 Person-number stem + pronominal plural affix": 4,
+                "6 Person-number stem + nominal plural affix": 5,
+                "7 Person stem + pronominal plural affix": 6,
+                "8 Person stem + nominal plural affix": 7
+            },
+            "name": "35A",
+            "orig_idx": 34,
+            "vid2label": [
+                "1 No independent subject pronouns",
+                "2 Number-indifferent pronouns",
+                "3 Person-number affixes",
+                "4 Person-number stem",
+                "5 Person-number stem + pronominal plural affix",
+                "6 Person-number stem + nominal plural affix",
+                "7 Person stem + pronominal plural affix",
+                "8 Person stem + nominal plural affix"
+            ]
+        },
+        "fid": 35,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "36A The Associative Plural",
+            "label2vid": {
+                "1 Associative same as additive plural": 0,
+                "2 Unique affixal associative plural": 1,
+                "3 Unique periphrastic associative plural": 2,
+                "4 No associative plural": 3
+            },
+            "name": "36A",
+            "orig_idx": 35,
+            "vid2label": [
+                "1 Associative same as additive plural",
+                "2 Unique affixal associative plural",
+                "3 Unique periphrastic associative plural",
+                "4 No associative plural"
+            ]
+        },
+        "fid": 36,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "37A Definite Articles",
+            "label2vid": {
+                "1 Definite word distinct from demonstrative": 0,
+                "2 Demonstrative word used as definite article": 1,
+                "3 Definite affix": 2,
+                "4 No definite, but indefinite article": 3,
+                "5 No definite or indefinite article": 4
+            },
+            "name": "37A",
+            "orig_idx": 36,
+            "vid2label": [
+                "1 Definite word distinct from demonstrative",
+                "2 Demonstrative word used as definite article",
+                "3 Definite affix",
+                "4 No definite, but indefinite article",
+                "5 No definite or indefinite article"
+            ]
+        },
+        "fid": 37,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "38A Indefinite Articles",
+            "label2vid": {
+                "1 Indefinite word distinct from 'one'": 0,
+                "2 Indefinite word same as 'one'": 1,
+                "3 Indefinite affix": 2,
+                "4 No indefinite, but definite article": 3,
+                "5 No definite or indefinite article": 4
+            },
+            "name": "38A",
+            "orig_idx": 37,
+            "vid2label": [
+                "1 Indefinite word distinct from 'one'",
+                "2 Indefinite word same as 'one'",
+                "3 Indefinite affix",
+                "4 No indefinite, but definite article",
+                "5 No definite or indefinite article"
+            ]
+        },
+        "fid": 38,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "39A Inclusive/Exclusive Distinction in Independent Pronouns",
+            "label2vid": {
+                "1 No 'we'": 0,
+                "2 'We' the same as 'I'": 1,
+                "3 No inclusive/exclusive": 2,
+                "4 Only inclusive": 3,
+                "5 Inclusive/exclusive": 4
+            },
+            "name": "39A",
+            "orig_idx": 38,
+            "vid2label": [
+                "1 No 'we'",
+                "2 'We' the same as 'I'",
+                "3 No inclusive/exclusive",
+                "4 Only inclusive",
+                "5 Inclusive/exclusive"
+            ]
+        },
+        "fid": 39,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "40A Inclusive/Exclusive Distinction in Verbal Inflection",
+            "label2vid": {
+                "1 No person marking": 0,
+                "2 'We' the same as 'I'": 1,
+                "3 No inclusive/exclusive": 2,
+                "4 Only inclusive": 3,
+                "5 Inclusive/exclusive": 4
+            },
+            "name": "40A",
+            "orig_idx": 39,
+            "vid2label": [
+                "1 No person marking",
+                "2 'We' the same as 'I'",
+                "3 No inclusive/exclusive",
+                "4 Only inclusive",
+                "5 Inclusive/exclusive"
+            ]
+        },
+        "fid": 40,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "41A Distance Contrasts in Demonstratives",
+            "label2vid": {
+                "1 No distance contrast": 0,
+                "2 Two-way contrast": 1,
+                "3 Three-way contrast": 2,
+                "4 Four-way contrast": 3,
+                "5 Five (or more)-way contrast": 4
+            },
+            "name": "41A",
+            "orig_idx": 40,
+            "vid2label": [
+                "1 No distance contrast",
+                "2 Two-way contrast",
+                "3 Three-way contrast",
+                "4 Four-way contrast",
+                "5 Five (or more)-way contrast"
+            ]
+        },
+        "fid": 41,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "42A Pronominal and Adnominal Demonstratives",
+            "label2vid": {
+                "1 Identical": 0,
+                "2 Different stem": 1,
+                "3 Different inflection": 2
+            },
+            "name": "42A",
+            "orig_idx": 41,
+            "vid2label": [
+                "1 Identical",
+                "2 Different stem",
+                "3 Different inflection"
+            ]
+        },
+        "fid": 42,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "43A Third Person Pronouns and Demonstratives",
+            "label2vid": {
+                "1 Unrelated": 0,
+                "2 Related for all demonstratives": 1,
+                "3 Related to remote demonstratives": 2,
+                "4 Related to non-remote demonstratives": 3,
+                "5 Related by gender markers": 4,
+                "6 Related for non-human reference": 5
+            },
+            "name": "43A",
+            "orig_idx": 42,
+            "vid2label": [
+                "1 Unrelated",
+                "2 Related for all demonstratives",
+                "3 Related to remote demonstratives",
+                "4 Related to non-remote demonstratives",
+                "5 Related by gender markers",
+                "6 Related for non-human reference"
+            ]
+        },
+        "fid": 43,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "44A Gender Distinctions in Independent Personal Pronouns",
+            "label2vid": {
+                "1 In 3rd person + 1st and/or 2nd person": 0,
+                "2 3rd person only, but also non-singular": 1,
+                "3 3rd person singular only": 2,
+                "4 1st or 2nd person but not 3rd": 3,
+                "5 3rd person non-singular only": 4,
+                "6 No gender distinctions": 5
+            },
+            "name": "44A",
+            "orig_idx": 43,
+            "vid2label": [
+                "1 In 3rd person + 1st and/or 2nd person",
+                "2 3rd person only, but also non-singular",
+                "3 3rd person singular only",
+                "4 1st or 2nd person but not 3rd",
+                "5 3rd person non-singular only",
+                "6 No gender distinctions"
+            ]
+        },
+        "fid": 44,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "45A Politeness Distinctions in Pronouns",
+            "label2vid": {
+                "1 No politeness distinction": 0,
+                "2 Binary politeness distinction": 1,
+                "3 Multiple politeness distinctions": 2,
+                "4 Pronouns avoided for politeness": 3
+            },
+            "name": "45A",
+            "orig_idx": 44,
+            "vid2label": [
+                "1 No politeness distinction",
+                "2 Binary politeness distinction",
+                "3 Multiple politeness distinctions",
+                "4 Pronouns avoided for politeness"
+            ]
+        },
+        "fid": 45,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "46A Indefinite Pronouns",
+            "label2vid": {
+                "1 Interrogative-based": 0,
+                "2 Generic-noun-based": 1,
+                "3 Special": 2,
+                "4 Mixed": 3,
+                "5 Existential construction": 4
+            },
+            "name": "46A",
+            "orig_idx": 45,
+            "vid2label": [
+                "1 Interrogative-based",
+                "2 Generic-noun-based",
+                "3 Special",
+                "4 Mixed",
+                "5 Existential construction"
+            ]
+        },
+        "fid": 46,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "47A Intensifiers and Reflexive Pronouns",
+            "label2vid": {
+                "1 Identical": 1,
+                "2 Differentiated": 0
+            },
+            "name": "47A",
+            "orig_idx": 46,
+            "vid2label": [
+                "2 Differentiated",
+                "1 Identical"
+            ]
+        },
+        "fid": 47,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "48A Person Marking on Adpositions",
+            "label2vid": {
+                "1 No adpositions": 0,
+                "2 No person marking": 1,
+                "3 Pronouns only": 2,
+                "4 Pronouns and nouns": 3
+            },
+            "name": "48A",
+            "orig_idx": 47,
+            "vid2label": [
+                "1 No adpositions",
+                "2 No person marking",
+                "3 Pronouns only",
+                "4 Pronouns and nouns"
+            ]
+        },
+        "fid": 48,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "49A Number of Cases",
+            "label2vid": {
+                "1 No morphological case-marking": 0,
+                "2 2 cases": 1,
+                "3 3 cases": 2,
+                "4 4 cases": 3,
+                "5 5 cases": 4,
+                "6 6-7 cases": 5,
+                "7 8-9 cases": 6,
+                "8 10 or more cases": 7,
+                "9 Exclusively borderline case-marking": 8
+            },
+            "name": "49A",
+            "orig_idx": 48,
+            "vid2label": [
+                "1 No morphological case-marking",
+                "2 2 cases",
+                "3 3 cases",
+                "4 4 cases",
+                "5 5 cases",
+                "6 6-7 cases",
+                "7 8-9 cases",
+                "8 10 or more cases",
+                "9 Exclusively borderline case-marking"
+            ]
+        },
+        "fid": 49,
+        "size": 9,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "50A Asymmetrical Case-Marking",
+            "label2vid": {
+                "1 No case-marking": 0,
+                "2 Symmetrical": 1,
+                "3 Additive-quantitatively asymmetrical": 2,
+                "4 Subtractive-quantitatively asymmetrical": 3,
+                "5 Qualitatively asymmetrical": 4,
+                "6 Syncretism in relevant NP-types": 5
+            },
+            "name": "50A",
+            "orig_idx": 49,
+            "vid2label": [
+                "1 No case-marking",
+                "2 Symmetrical",
+                "3 Additive-quantitatively asymmetrical",
+                "4 Subtractive-quantitatively asymmetrical",
+                "5 Qualitatively asymmetrical",
+                "6 Syncretism in relevant NP-types"
+            ]
+        },
+        "fid": 50,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "51A Position of Case Affixes",
+            "label2vid": {
+                "1 Case suffixes": 0,
+                "2 Case prefixes": 1,
+                "3 Case tone": 2,
+                "4 Case stem change": 3,
+                "5 Mixed morphological case": 4,
+                "6 Postpositional clitics": 5,
+                "7 Prepositional clitics": 6,
+                "8 Inpositional clitics": 7,
+                "9 No case affixes or adpositional clitics": 8
+            },
+            "name": "51A",
+            "orig_idx": 50,
+            "vid2label": [
+                "1 Case suffixes",
+                "2 Case prefixes",
+                "3 Case tone",
+                "4 Case stem change",
+                "5 Mixed morphological case",
+                "6 Postpositional clitics",
+                "7 Prepositional clitics",
+                "8 Inpositional clitics",
+                "9 No case affixes or adpositional clitics"
+            ]
+        },
+        "fid": 51,
+        "size": 9,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "52A Comitatives and Instrumentals",
+            "label2vid": {
+                "1 Identity": 0,
+                "2 Differentiation": 1,
+                "3 Mixed": 2
+            },
+            "name": "52A",
+            "orig_idx": 51,
+            "vid2label": [
+                "1 Identity",
+                "2 Differentiation",
+                "3 Mixed"
+            ]
+        },
+        "fid": 52,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "53A Ordinal Numerals",
+            "label2vid": {
+                "1 None": 0,
+                "2 One, two, three": 1,
+                "3 First, two, three": 2,
+                "4 One-th, two-th, three-th": 3,
+                "5 First/one-th, two-th, three-th": 4,
+                "6 First, two-th, three-th": 5,
+                "7 First, second, three-th": 6,
+                "8 Various": 7
+            },
+            "name": "53A",
+            "orig_idx": 52,
+            "vid2label": [
+                "1 None",
+                "2 One, two, three",
+                "3 First, two, three",
+                "4 One-th, two-th, three-th",
+                "5 First/one-th, two-th, three-th",
+                "6 First, two-th, three-th",
+                "7 First, second, three-th",
+                "8 Various"
+            ]
+        },
+        "fid": 53,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "54A Distributive Numerals",
+            "label2vid": {
+                "1 No distributive numerals": 0,
+                "2 Marked by reduplication": 1,
+                "3 Marked by prefix": 2,
+                "4 Marked by suffix": 3,
+                "5 Marked by preceding word": 4,
+                "6 Marked by following word": 5,
+                "7 Marked by mixed or other strategies": 6
+            },
+            "name": "54A",
+            "orig_idx": 53,
+            "vid2label": [
+                "1 No distributive numerals",
+                "2 Marked by reduplication",
+                "3 Marked by prefix",
+                "4 Marked by suffix",
+                "5 Marked by preceding word",
+                "6 Marked by following word",
+                "7 Marked by mixed or other strategies"
+            ]
+        },
+        "fid": 54,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "55A Numeral Classifiers",
+            "label2vid": {
+                "1 Absent": 0,
+                "2 Optional": 1,
+                "3 Obligatory": 2
+            },
+            "name": "55A",
+            "orig_idx": 54,
+            "vid2label": [
+                "1 Absent",
+                "2 Optional",
+                "3 Obligatory"
+            ]
+        },
+        "fid": 55,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Categories",
+            "fullname": "57A Position of Pronominal Possessive Affixes",
+            "label2vid": {
+                "1 Possessive prefixes": 0,
+                "2 Possessive suffixes": 1,
+                "3 Prefixes and suffixes": 2,
+                "4 No possessive affixes": 3
+            },
+            "name": "57A",
+            "orig_idx": 56,
+            "vid2label": [
+                "1 Possessive prefixes",
+                "2 Possessive suffixes",
+                "3 Prefixes and suffixes",
+                "4 No possessive affixes"
+            ]
+        },
+        "fid": 56,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Syntax",
+            "fullname": "58A Obligatory Possessive Inflection",
+            "label2vid": {
+                "1 Exists": 1,
+                "2 Absent": 0
+            },
+            "name": "58A",
+            "orig_idx": 57,
+            "vid2label": [
+                "2 Absent",
+                "1 Exists"
+            ]
+        },
+        "fid": 57,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Syntax",
+            "fullname": "58B Number of Possessive Nouns",
+            "label2vid": {
+                "1 None reported": 0,
+                "2 One": 1,
+                "3 Two to four": 2,
+                "4 Five or more": 3
+            },
+            "name": "58B",
+            "orig_idx": 190,
+            "vid2label": [
+                "1 None reported",
+                "2 One",
+                "3 Two to four",
+                "4 Five or more"
+            ]
+        },
+        "fid": 58,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Syntax",
+            "fullname": "59A Possessive Classification",
+            "label2vid": {
+                "1 No possessive classification": 0,
+                "2 Two classes": 1,
+                "3 Three to five classes": 2,
+                "4 More than five classes": 3
+            },
+            "name": "59A",
+            "orig_idx": 58,
+            "vid2label": [
+                "1 No possessive classification",
+                "2 Two classes",
+                "3 Three to five classes",
+                "4 More than five classes"
+            ]
+        },
+        "fid": 59,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Syntax",
+            "fullname": "62A Action Nominal Constructions",
+            "label2vid": {
+                "1 Sentential": 0,
+                "2 Possessive-Accusative": 1,
+                "3 Ergative-Possessive": 2,
+                "4 Double-Possessive": 3,
+                "5 Other": 4,
+                "6 Mixed": 5,
+                "7 Restricted": 6,
+                "8 No action nominals": 7
+            },
+            "name": "62A",
+            "orig_idx": 61,
+            "vid2label": [
+                "1 Sentential",
+                "2 Possessive-Accusative",
+                "3 Ergative-Possessive",
+                "4 Double-Possessive",
+                "5 Other",
+                "6 Mixed",
+                "7 Restricted",
+                "8 No action nominals"
+            ]
+        },
+        "fid": 60,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Syntax",
+            "fullname": "63A Noun Phrase Conjunction",
+            "label2vid": {
+                "1 'And' different from 'with'": 0,
+                "2 'And' identical to 'with'": 1
+            },
+            "name": "63A",
+            "orig_idx": 62,
+            "vid2label": [
+                "1 'And' different from 'with'",
+                "2 'And' identical to 'with'"
+            ]
+        },
+        "fid": 61,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Nominal Syntax",
+            "fullname": "64A Nominal and Verbal Conjunction",
+            "label2vid": {
+                "1 Identity": 0,
+                "2 Differentiation": 1,
+                "3 Both expressed by juxtaposition": 2
+            },
+            "name": "64A",
+            "orig_idx": 63,
+            "vid2label": [
+                "1 Identity",
+                "2 Differentiation",
+                "3 Both expressed by juxtaposition"
+            ]
+        },
+        "fid": 62,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "65A Perfective/Imperfective Aspect",
+            "label2vid": {
+                "1 Grammatical marking": 1,
+                "2 No grammatical marking": 0
+            },
+            "name": "65A",
+            "orig_idx": 64,
+            "vid2label": [
+                "2 No grammatical marking",
+                "1 Grammatical marking"
+            ]
+        },
+        "fid": 63,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "66A The Past Tense",
+            "label2vid": {
+                "1 Present, no remoteness distinctions": 0,
+                "2 Present, 2-3 remoteness distinctions": 1,
+                "3 Present, 4 or more remoteness distinctions": 2,
+                "4 No past tense": 3
+            },
+            "name": "66A",
+            "orig_idx": 65,
+            "vid2label": [
+                "1 Present, no remoteness distinctions",
+                "2 Present, 2-3 remoteness distinctions",
+                "3 Present, 4 or more remoteness distinctions",
+                "4 No past tense"
+            ]
+        },
+        "fid": 64,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "67A The Future Tense",
+            "label2vid": {
+                "1 Inflectional future exists": 1,
+                "2 No inflectional future": 0
+            },
+            "name": "67A",
+            "orig_idx": 66,
+            "vid2label": [
+                "2 No inflectional future",
+                "1 Inflectional future exists"
+            ]
+        },
+        "fid": 65,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "68A The Perfect",
+            "label2vid": {
+                "1 From possessive": 0,
+                "2 From 'finish', 'already'": 1,
+                "3 Other perfect": 2,
+                "4 No perfect": 3
+            },
+            "name": "68A",
+            "orig_idx": 67,
+            "vid2label": [
+                "1 From possessive",
+                "2 From 'finish', 'already'",
+                "3 Other perfect",
+                "4 No perfect"
+            ]
+        },
+        "fid": 66,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "69A Position of Tense-Aspect Affixes",
+            "label2vid": {
+                "1 Tense-aspect prefixes": 0,
+                "2 Tense-aspect suffixes": 1,
+                "3 Tense-aspect tone": 2,
+                "4 Mixed type": 3,
+                "5 No tense-aspect inflection": 4
+            },
+            "name": "69A",
+            "orig_idx": 68,
+            "vid2label": [
+                "1 Tense-aspect prefixes",
+                "2 Tense-aspect suffixes",
+                "3 Tense-aspect tone",
+                "4 Mixed type",
+                "5 No tense-aspect inflection"
+            ]
+        },
+        "fid": 67,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "70A The Morphological Imperative",
+            "label2vid": {
+                "1 Second singular and second plural": 0,
+                "2 Second singular": 1,
+                "3 Second plural": 2,
+                "4 Second person number-neutral": 3,
+                "5 No second-person imperatives": 4
+            },
+            "name": "70A",
+            "orig_idx": 69,
+            "vid2label": [
+                "1 Second singular and second plural",
+                "2 Second singular",
+                "3 Second plural",
+                "4 Second person number-neutral",
+                "5 No second-person imperatives"
+            ]
+        },
+        "fid": 68,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "71A The Prohibitive",
+            "label2vid": {
+                "1 Normal imperative + normal negative": 0,
+                "2 Normal imperative + special negative": 1,
+                "3 Special imperative + normal negative": 2,
+                "4 Special imperative + special negative": 3
+            },
+            "name": "71A",
+            "orig_idx": 70,
+            "vid2label": [
+                "1 Normal imperative + normal negative",
+                "2 Normal imperative + special negative",
+                "3 Special imperative + normal negative",
+                "4 Special imperative + special negative"
+            ]
+        },
+        "fid": 69,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "72A Imperative-Hortative Systems",
+            "label2vid": {
+                "1 Maximal system": 0,
+                "2 Minimal system": 1,
+                "3 Both types of system": 2,
+                "4 Neither type of system": 3
+            },
+            "name": "72A",
+            "orig_idx": 71,
+            "vid2label": [
+                "1 Maximal system",
+                "2 Minimal system",
+                "3 Both types of system",
+                "4 Neither type of system"
+            ]
+        },
+        "fid": 70,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "73A The Optative",
+            "label2vid": {
+                "1 Inflectional optative present": 1,
+                "2 Inflectional optative absent": 0
+            },
+            "name": "73A",
+            "orig_idx": 72,
+            "vid2label": [
+                "2 Inflectional optative absent",
+                "1 Inflectional optative present"
+            ]
+        },
+        "fid": 71,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "74A Situational Possibility",
+            "label2vid": {
+                "1 Affixes on verbs": 0,
+                "2 Verbal constructions": 1,
+                "3 Other kinds of markers": 2
+            },
+            "name": "74A",
+            "orig_idx": 73,
+            "vid2label": [
+                "1 Affixes on verbs",
+                "2 Verbal constructions",
+                "3 Other kinds of markers"
+            ]
+        },
+        "fid": 72,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "75A Epistemic Possibility",
+            "label2vid": {
+                "1 Verbal constructions": 0,
+                "2 Affixes on verbs": 1,
+                "3 Other": 2
+            },
+            "name": "75A",
+            "orig_idx": 74,
+            "vid2label": [
+                "1 Verbal constructions",
+                "2 Affixes on verbs",
+                "3 Other"
+            ]
+        },
+        "fid": 73,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "76A Overlap between Situational and Epistemic Modal Marking",
+            "label2vid": {
+                "1 Overlap for both possibility and necessity": 0,
+                "2 Overlap for either possibility or necessity": 1,
+                "3 No overlap": 2
+            },
+            "name": "76A",
+            "orig_idx": 75,
+            "vid2label": [
+                "1 Overlap for both possibility and necessity",
+                "2 Overlap for either possibility or necessity",
+                "3 No overlap"
+            ]
+        },
+        "fid": 74,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "77A Semantic Distinctions of Evidentiality",
+            "label2vid": {
+                "1 No grammatical evidentials": 0,
+                "2 Indirect only": 1,
+                "3 Direct and indirect": 2
+            },
+            "name": "77A",
+            "orig_idx": 76,
+            "vid2label": [
+                "1 No grammatical evidentials",
+                "2 Indirect only",
+                "3 Direct and indirect"
+            ]
+        },
+        "fid": 75,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "78A Coding of Evidentiality",
+            "label2vid": {
+                "1 No grammatical evidentials": 0,
+                "2 Verbal affix or clitic": 1,
+                "3 Part of the tense system": 2,
+                "4 Separate particle": 3,
+                "5 Modal morpheme": 4,
+                "6 Mixed": 5
+            },
+            "name": "78A",
+            "orig_idx": 77,
+            "vid2label": [
+                "1 No grammatical evidentials",
+                "2 Verbal affix or clitic",
+                "3 Part of the tense system",
+                "4 Separate particle",
+                "5 Modal morpheme",
+                "6 Mixed"
+            ]
+        },
+        "fid": 76,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "79A Suppletion According to Tense and Aspect",
+            "label2vid": {
+                "1 Tense": 0,
+                "2 Aspect": 1,
+                "3 Tense and aspect": 2,
+                "4 None": 3
+            },
+            "name": "79A",
+            "orig_idx": 78,
+            "vid2label": [
+                "1 Tense",
+                "2 Aspect",
+                "3 Tense and aspect",
+                "4 None"
+            ]
+        },
+        "fid": 77,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "79B Suppletion in Imperatives and Hortatives",
+            "label2vid": {
+                "1 A regular and a suppletive form alternate": 0,
+                "2 Imperative": 1,
+                "3 Hortative": 2,
+                "4 Imperative and Hortative": 3,
+                "5 None (= no suppletive imperatives reported in the reference material)": 4
+            },
+            "name": "79B",
+            "orig_idx": 191,
+            "vid2label": [
+                "1 A regular and a suppletive form alternate",
+                "2 Imperative",
+                "3 Hortative",
+                "4 Imperative and Hortative",
+                "5 None (= no suppletive imperatives reported in the reference material)"
+            ]
+        },
+        "fid": 78,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Verbal Categories",
+            "fullname": "80A Verbal Number and Suppletion",
+            "label2vid": {
+                "1 None": 0,
+                "2 Singular-plural pairs, no suppletion": 1,
+                "3 Singular-plural pairs, suppletion": 2,
+                "4 Singular-dual-plural triples, no suppletion": 3,
+                "5 Singular-dual-plural triples, suppletion": 4
+            },
+            "name": "80A",
+            "orig_idx": 79,
+            "vid2label": [
+                "1 None",
+                "2 Singular-plural pairs, no suppletion",
+                "3 Singular-plural pairs, suppletion",
+                "4 Singular-dual-plural triples, no suppletion",
+                "5 Singular-dual-plural triples, suppletion"
+            ]
+        },
+        "fid": 79,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "81A Order of Subject, Object and Verb",
+            "label2vid": {
+                "1 SOV": 0,
+                "2 SVO": 1,
+                "3 VSO": 2,
+                "4 VOS": 3,
+                "5 OVS": 4,
+                "6 OSV": 5,
+                "7 No dominant order": 6
+            },
+            "name": "81A",
+            "orig_idx": 80,
+            "vid2label": [
+                "1 SOV",
+                "2 SVO",
+                "3 VSO",
+                "4 VOS",
+                "5 OVS",
+                "6 OSV",
+                "7 No dominant order"
+            ]
+        },
+        "fid": 80,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "82A Order of Subject and Verb",
+            "label2vid": {
+                "1 SV": 0,
+                "2 VS": 1,
+                "3 No dominant order": 2
+            },
+            "name": "82A",
+            "orig_idx": 81,
+            "vid2label": [
+                "1 SV",
+                "2 VS",
+                "3 No dominant order"
+            ]
+        },
+        "fid": 81,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "83A Order of Object and Verb",
+            "label2vid": {
+                "1 OV": 0,
+                "2 VO": 1,
+                "3 No dominant order": 2
+            },
+            "name": "83A",
+            "orig_idx": 82,
+            "vid2label": [
+                "1 OV",
+                "2 VO",
+                "3 No dominant order"
+            ]
+        },
+        "fid": 82,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "84A Order of Object, Oblique, and Verb",
+            "label2vid": {
+                "1 VOX": 0,
+                "2 XVO": 1,
+                "3 XOV": 2,
+                "4 OXV": 3,
+                "5 OVX": 4,
+                "6 No dominant order": 5
+            },
+            "name": "84A",
+            "orig_idx": 83,
+            "vid2label": [
+                "1 VOX",
+                "2 XVO",
+                "3 XOV",
+                "4 OXV",
+                "5 OVX",
+                "6 No dominant order"
+            ]
+        },
+        "fid": 83,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "85A Order of Adposition and Noun Phrase",
+            "label2vid": {
+                "1 Postpositions": 0,
+                "2 Prepositions": 1,
+                "3 Inpositions": 2,
+                "4 No dominant order": 3,
+                "5 No adpositions": 4
+            },
+            "name": "85A",
+            "orig_idx": 84,
+            "vid2label": [
+                "1 Postpositions",
+                "2 Prepositions",
+                "3 Inpositions",
+                "4 No dominant order",
+                "5 No adpositions"
+            ]
+        },
+        "fid": 84,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "86A Order of Genitive and Noun",
+            "label2vid": {
+                "1 Genitive-Noun": 0,
+                "2 Noun-Genitive": 1,
+                "3 No dominant order": 2
+            },
+            "name": "86A",
+            "orig_idx": 85,
+            "vid2label": [
+                "1 Genitive-Noun",
+                "2 Noun-Genitive",
+                "3 No dominant order"
+            ]
+        },
+        "fid": 85,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "87A Order of Adjective and Noun",
+            "label2vid": {
+                "1 Adjective-Noun": 0,
+                "2 Noun-Adjective": 1,
+                "3 No dominant order": 2,
+                "4 Only internally-headed relative clauses": 3
+            },
+            "name": "87A",
+            "orig_idx": 86,
+            "vid2label": [
+                "1 Adjective-Noun",
+                "2 Noun-Adjective",
+                "3 No dominant order",
+                "4 Only internally-headed relative clauses"
+            ]
+        },
+        "fid": 86,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "88A Order of Demonstrative and Noun",
+            "label2vid": {
+                "1 Demonstrative-Noun": 0,
+                "2 Noun-Demonstrative": 1,
+                "3 Demonstrative prefix": 2,
+                "4 Demonstrative suffix": 3,
+                "5 Demonstrative before and after Noun": 4,
+                "6 Mixed": 5
+            },
+            "name": "88A",
+            "orig_idx": 87,
+            "vid2label": [
+                "1 Demonstrative-Noun",
+                "2 Noun-Demonstrative",
+                "3 Demonstrative prefix",
+                "4 Demonstrative suffix",
+                "5 Demonstrative before and after Noun",
+                "6 Mixed"
+            ]
+        },
+        "fid": 87,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "89A Order of Numeral and Noun",
+            "label2vid": {
+                "1 Numeral-Noun": 0,
+                "2 Noun-Numeral": 1,
+                "3 No dominant order": 2,
+                "4 Numeral only modifies verb": 3
+            },
+            "name": "89A",
+            "orig_idx": 88,
+            "vid2label": [
+                "1 Numeral-Noun",
+                "2 Noun-Numeral",
+                "3 No dominant order",
+                "4 Numeral only modifies verb"
+            ]
+        },
+        "fid": 88,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "90A Order of Relative Clause and Noun",
+            "label2vid": {
+                "1 Noun-Relative clause": 0,
+                "2 Relative clause-Noun": 1,
+                "3 Internally headed": 2,
+                "4 Correlative": 3,
+                "5 Adjoined": 4,
+                "6 Doubly headed": 5,
+                "7 Mixed": 6
+            },
+            "name": "90A",
+            "orig_idx": 89,
+            "vid2label": [
+                "1 Noun-Relative clause",
+                "2 Relative clause-Noun",
+                "3 Internally headed",
+                "4 Correlative",
+                "5 Adjoined",
+                "6 Doubly headed",
+                "7 Mixed"
+            ]
+        },
+        "fid": 89,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "90B Prenominal relative clauses",
+            "label2vid": {
+                "-1 Undefined": 5,
+                "1 Relative clause-Noun (RelN) dominant": 0,
+                "2 RelN or NRel": 1,
+                "3 RelN or internally-headed": 2,
+                "4 RelN or correlative": 3,
+                "5 RelN or double-headed": 4
+            },
+            "name": "90B",
+            "orig_idx": 143,
+            "vid2label": [
+                "1 Relative clause-Noun (RelN) dominant",
+                "2 RelN or NRel",
+                "3 RelN or internally-headed",
+                "4 RelN or correlative",
+                "5 RelN or double-headed",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 90,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "90C Postnominal relative clauses",
+            "label2vid": {
+                "-1 Undefined": 4,
+                "1 Noun-Relative clause (NRel) dominant": 0,
+                "2 NRel or RelN": 1,
+                "3 NRel or internally-headed": 2,
+                "4 NRel or correlative": 3
+            },
+            "name": "90C",
+            "orig_idx": 145,
+            "vid2label": [
+                "1 Noun-Relative clause (NRel) dominant",
+                "2 NRel or RelN",
+                "3 NRel or internally-headed",
+                "4 NRel or correlative",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 91,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "91A Order of Degree Word and Adjective",
+            "label2vid": {
+                "1 Degree word-Adjective": 0,
+                "2 Adjective-Degree word": 1,
+                "3 No dominant order": 2
+            },
+            "name": "91A",
+            "orig_idx": 90,
+            "vid2label": [
+                "1 Degree word-Adjective",
+                "2 Adjective-Degree word",
+                "3 No dominant order"
+            ]
+        },
+        "fid": 92,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "92A Position of Polar Question Particles",
+            "label2vid": {
+                "1 Initial": 0,
+                "2 Final": 1,
+                "3 Second position": 2,
+                "4 Other position": 3,
+                "5 In either of two positions": 4,
+                "6 No question particle": 5
+            },
+            "name": "92A",
+            "orig_idx": 91,
+            "vid2label": [
+                "1 Initial",
+                "2 Final",
+                "3 Second position",
+                "4 Other position",
+                "5 In either of two positions",
+                "6 No question particle"
+            ]
+        },
+        "fid": 93,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "93A Position of Interrogative Phrases in Content Questions",
+            "label2vid": {
+                "1 Initial interrogative phrase": 0,
+                "2 Not initial interrogative phrase": 1,
+                "3 Mixed": 2
+            },
+            "name": "93A",
+            "orig_idx": 92,
+            "vid2label": [
+                "1 Initial interrogative phrase",
+                "2 Not initial interrogative phrase",
+                "3 Mixed"
+            ]
+        },
+        "fid": 94,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "94A Order of Adverbial Subordinator and Clause",
+            "label2vid": {
+                "1 Initial subordinator word": 0,
+                "2 Final subordinator word": 1,
+                "3 Internal subordinator word": 2,
+                "4 Subordinating suffix": 3,
+                "5 Mixed": 4
+            },
+            "name": "94A",
+            "orig_idx": 93,
+            "vid2label": [
+                "1 Initial subordinator word",
+                "2 Final subordinator word",
+                "3 Internal subordinator word",
+                "4 Subordinating suffix",
+                "5 Mixed"
+            ]
+        },
+        "fid": 95,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "95A Relationship between the Order of Object and Verb and the Order of Adposition and Noun Phrase",
+            "label2vid": {
+                "1 OV and Postpositions": 0,
+                "2 OV and Prepositions": 1,
+                "3 VO and Postpositions": 2,
+                "4 VO and Prepositions": 3,
+                "5 Other": 4
+            },
+            "name": "95A",
+            "orig_idx": 94,
+            "vid2label": [
+                "1 OV and Postpositions",
+                "2 OV and Prepositions",
+                "3 VO and Postpositions",
+                "4 VO and Prepositions",
+                "5 Other"
+            ]
+        },
+        "fid": 96,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "96A Relationship between the Order of Object and Verb and the Order of Relative Clause and Noun",
+            "label2vid": {
+                "1 OV and RelN": 0,
+                "2 OV and NRel": 1,
+                "3 VO and RelN": 2,
+                "4 VO and NRel": 3,
+                "5 Other": 4
+            },
+            "name": "96A",
+            "orig_idx": 95,
+            "vid2label": [
+                "1 OV and RelN",
+                "2 OV and NRel",
+                "3 VO and RelN",
+                "4 VO and NRel",
+                "5 Other"
+            ]
+        },
+        "fid": 97,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "97A Relationship between the Order of Object and Verb and the Order of Adjective and Noun",
+            "label2vid": {
+                "1 OV and AdjN": 0,
+                "2 OV and NAdj": 1,
+                "3 VO and AdjN": 2,
+                "4 VO and NAdj": 3,
+                "5 Other": 4
+            },
+            "name": "97A",
+            "orig_idx": 96,
+            "vid2label": [
+                "1 OV and AdjN",
+                "2 OV and NAdj",
+                "3 VO and AdjN",
+                "4 VO and NAdj",
+                "5 Other"
+            ]
+        },
+        "fid": 98,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "98A Alignment of Case Marking of Full Noun Phrases",
+            "label2vid": {
+                "1 Neutral": 0,
+                "2 Nominative - accusative (standard)": 1,
+                "3 Nominative - accusative (marked nominative)": 2,
+                "4 Ergative - absolutive": 3,
+                "5 Tripartite": 4,
+                "6 Active-inactive": 5
+            },
+            "name": "98A",
+            "orig_idx": 97,
+            "vid2label": [
+                "1 Neutral",
+                "2 Nominative - accusative (standard)",
+                "3 Nominative - accusative (marked nominative)",
+                "4 Ergative - absolutive",
+                "5 Tripartite",
+                "6 Active-inactive"
+            ]
+        },
+        "fid": 99,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "99A Alignment of Case Marking of Pronouns",
+            "label2vid": {
+                "1 Neutral": 0,
+                "2 Nominative - accusative (standard)": 1,
+                "3 Nominative - accusative (marked nominative)": 2,
+                "4 Ergative - absolutive": 3,
+                "5 Tripartite": 4,
+                "6 Active - inactive": 5,
+                "7 None": 6
+            },
+            "name": "99A",
+            "orig_idx": 98,
+            "vid2label": [
+                "1 Neutral",
+                "2 Nominative - accusative (standard)",
+                "3 Nominative - accusative (marked nominative)",
+                "4 Ergative - absolutive",
+                "5 Tripartite",
+                "6 Active - inactive",
+                "7 None"
+            ]
+        },
+        "fid": 100,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "100A Alignment of Verbal Person Marking",
+            "label2vid": {
+                "1 Neutral": 0,
+                "2 Accusative": 1,
+                "3 Ergative": 2,
+                "4 Active": 3,
+                "5 Hierarchical": 4,
+                "6 Split": 5
+            },
+            "name": "100A",
+            "orig_idx": 99,
+            "vid2label": [
+                "1 Neutral",
+                "2 Accusative",
+                "3 Ergative",
+                "4 Active",
+                "5 Hierarchical",
+                "6 Split"
+            ]
+        },
+        "fid": 101,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "101A Expression of Pronominal Subjects",
+            "label2vid": {
+                "1 Obligatory pronouns in subject position": 0,
+                "2 Subject affixes on verb": 1,
+                "3 Subject clitics on variable host": 2,
+                "4 Subject pronouns in different position": 3,
+                "5 Optional pronouns in subject position": 4,
+                "6 Mixed": 5
+            },
+            "name": "101A",
+            "orig_idx": 100,
+            "vid2label": [
+                "1 Obligatory pronouns in subject position",
+                "2 Subject affixes on verb",
+                "3 Subject clitics on variable host",
+                "4 Subject pronouns in different position",
+                "5 Optional pronouns in subject position",
+                "6 Mixed"
+            ]
+        },
+        "fid": 102,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "102A Verbal Person Marking",
+            "label2vid": {
+                "1 No person marking": 0,
+                "2 Only the A argument": 1,
+                "3 Only the P argument": 2,
+                "4 A or P argument": 3,
+                "5 Both the A and P arguments": 4
+            },
+            "name": "102A",
+            "orig_idx": 101,
+            "vid2label": [
+                "1 No person marking",
+                "2 Only the A argument",
+                "3 Only the P argument",
+                "4 A or P argument",
+                "5 Both the A and P arguments"
+            ]
+        },
+        "fid": 103,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "103A Third Person Zero of Verbal Person Marking",
+            "label2vid": {
+                "1 No person marking": 0,
+                "2 No zero realization": 1,
+                "3 Zero in some 3sg forms": 2,
+                "4 Zero in all 3sg forms": 3,
+                "5 Zero in all 3rd person forms": 4,
+                "6 Zero only in 3rd nonsingular": 5
+            },
+            "name": "103A",
+            "orig_idx": 102,
+            "vid2label": [
+                "1 No person marking",
+                "2 No zero realization",
+                "3 Zero in some 3sg forms",
+                "4 Zero in all 3sg forms",
+                "5 Zero in all 3rd person forms",
+                "6 Zero only in 3rd nonsingular"
+            ]
+        },
+        "fid": 104,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "104A Order of Person Markers on the Verb",
+            "label2vid": {
+                "1 A and P do not or do not both occur on the verb": 0,
+                "2 A precedes P": 1,
+                "3 P precedes A": 2,
+                "4 Both orders of A and P occur": 3,
+                "5 A and P are fused": 4
+            },
+            "name": "104A",
+            "orig_idx": 103,
+            "vid2label": [
+                "1 A and P do not or do not both occur on the verb",
+                "2 A precedes P",
+                "3 P precedes A",
+                "4 Both orders of A and P occur",
+                "5 A and P are fused"
+            ]
+        },
+        "fid": 105,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "105A Ditransitive Constructions: The Verb 'Give'",
+            "label2vid": {
+                "1 Indirect-object construction": 0,
+                "2 Double-object construction": 1,
+                "3 Secondary-object construction": 2,
+                "4 Mixed": 3
+            },
+            "name": "105A",
+            "orig_idx": 104,
+            "vid2label": [
+                "1 Indirect-object construction",
+                "2 Double-object construction",
+                "3 Secondary-object construction",
+                "4 Mixed"
+            ]
+        },
+        "fid": 106,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "106A Reciprocal Constructions",
+            "label2vid": {
+                "1 No reciprocals": 0,
+                "2 Distinct from reflexive": 1,
+                "3 Mixed": 2,
+                "4 Identical to reflexive": 3
+            },
+            "name": "106A",
+            "orig_idx": 105,
+            "vid2label": [
+                "1 No reciprocals",
+                "2 Distinct from reflexive",
+                "3 Mixed",
+                "4 Identical to reflexive"
+            ]
+        },
+        "fid": 107,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "107A Passive Constructions",
+            "label2vid": {
+                "1 Present": 1,
+                "2 Absent": 0
+            },
+            "name": "107A",
+            "orig_idx": 106,
+            "vid2label": [
+                "2 Absent",
+                "1 Present"
+            ]
+        },
+        "fid": 108,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "108A Antipassive Constructions",
+            "label2vid": {
+                "1 Implicit patient": 0,
+                "2 Oblique patient": 1,
+                "3 No antipassive": 2
+            },
+            "name": "108A",
+            "orig_idx": 107,
+            "vid2label": [
+                "1 Implicit patient",
+                "2 Oblique patient",
+                "3 No antipassive"
+            ]
+        },
+        "fid": 109,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "108B Productivity of the Antipassive Construction",
+            "label2vid": {
+                "1 productive": 0,
+                "2 partially productive": 1,
+                "3 not productive": 2,
+                "4 no antipassive": 3
+            },
+            "name": "108B",
+            "orig_idx": 188,
+            "vid2label": [
+                "1 productive",
+                "2 partially productive",
+                "3 not productive",
+                "4 no antipassive"
+            ]
+        },
+        "fid": 110,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "109A Applicative Constructions",
+            "label2vid": {
+                "1 Benefactive object; both bases": 0,
+                "2 Benefactive object; only transitive": 1,
+                "3 Benefactive and other; both bases": 2,
+                "4 Benefactive and other; only transitive": 3,
+                "5 Non-benefactive object; both bases": 4,
+                "6 Non-benefactive object; only transitive": 5,
+                "7 Non-benefactive object; only intransitive": 6,
+                "8 No applicative construction": 7
+            },
+            "name": "109A",
+            "orig_idx": 108,
+            "vid2label": [
+                "1 Benefactive object; both bases",
+                "2 Benefactive object; only transitive",
+                "3 Benefactive and other; both bases",
+                "4 Benefactive and other; only transitive",
+                "5 Non-benefactive object; both bases",
+                "6 Non-benefactive object; only transitive",
+                "7 Non-benefactive object; only intransitive",
+                "8 No applicative construction"
+            ]
+        },
+        "fid": 111,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "109B Other Roles of Applied Objects",
+            "label2vid": {
+                "1 Instrument": 0,
+                "2 Locative": 1,
+                "3 Instrument and locative": 2,
+                "4 No other roles (= Only benefactive)": 3,
+                "5 No applicative construction": 4
+            },
+            "name": "109B",
+            "orig_idx": 184,
+            "vid2label": [
+                "1 Instrument",
+                "2 Locative",
+                "3 Instrument and locative",
+                "4 No other roles (= Only benefactive)",
+                "5 No applicative construction"
+            ]
+        },
+        "fid": 112,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "111A Nonperiphrastic Causative Constructions",
+            "label2vid": {
+                "1 Neither": 0,
+                "2 Morphological but no compound": 1,
+                "3 Compound but no morphological": 2,
+                "4 Both": 3
+            },
+            "name": "111A",
+            "orig_idx": 110,
+            "vid2label": [
+                "1 Neither",
+                "2 Morphological but no compound",
+                "3 Compound but no morphological",
+                "4 Both"
+            ]
+        },
+        "fid": 113,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "112A Negative Morphemes",
+            "label2vid": {
+                "1 Negative affix": 0,
+                "2 Negative particle": 1,
+                "3 Negative auxiliary verb": 2,
+                "4 Negative word, unclear if verb or particle": 3,
+                "5 Variation between negative word and affix": 4,
+                "6 Double negation": 5
+            },
+            "name": "112A",
+            "orig_idx": 111,
+            "vid2label": [
+                "1 Negative affix",
+                "2 Negative particle",
+                "3 Negative auxiliary verb",
+                "4 Negative word, unclear if verb or particle",
+                "5 Variation between negative word and affix",
+                "6 Double negation"
+            ]
+        },
+        "fid": 114,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "113A Symmetric and Asymmetric Standard Negation",
+            "label2vid": {
+                "1 Symmetric": 0,
+                "2 Asymmetric": 1,
+                "3 Both": 2
+            },
+            "name": "113A",
+            "orig_idx": 112,
+            "vid2label": [
+                "1 Symmetric",
+                "2 Asymmetric",
+                "3 Both"
+            ]
+        },
+        "fid": 115,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "114A Subtypes of Asymmetric Standard Negation",
+            "label2vid": {
+                "1 A/Fin": 0,
+                "2 A/NonReal": 1,
+                "3 A/Cat": 2,
+                "4 A/Fin and A/NonReal": 3,
+                "5 A/Fin and A/Cat": 4,
+                "6 A/NonReal and A/Cat": 5,
+                "7 Non-assignable": 6
+            },
+            "name": "114A",
+            "orig_idx": 113,
+            "vid2label": [
+                "1 A/Fin",
+                "2 A/NonReal",
+                "3 A/Cat",
+                "4 A/Fin and A/NonReal",
+                "5 A/Fin and A/Cat",
+                "6 A/NonReal and A/Cat",
+                "7 Non-assignable"
+            ]
+        },
+        "fid": 116,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "115A Negative Indefinite Pronouns and Predicate Negation",
+            "label2vid": {
+                "1 Predicate negation also present": 0,
+                "2 No predicate negation": 1,
+                "3 Mixed behaviour": 2,
+                "4 Negative existential construction": 3
+            },
+            "name": "115A",
+            "orig_idx": 114,
+            "vid2label": [
+                "1 Predicate negation also present",
+                "2 No predicate negation",
+                "3 Mixed behaviour",
+                "4 Negative existential construction"
+            ]
+        },
+        "fid": 117,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "116A Polar Questions",
+            "label2vid": {
+                "1 Question particle": 0,
+                "2 Interrogative verb morphology": 1,
+                "3 Mixture of previous two types": 2,
+                "4 Interrogative word order": 3,
+                "5 Absence of declarative morphemes": 4,
+                "6 Interrogative intonation only": 5,
+                "7 No interrogative-declarative distinction": 6
+            },
+            "name": "116A",
+            "orig_idx": 115,
+            "vid2label": [
+                "1 Question particle",
+                "2 Interrogative verb morphology",
+                "3 Mixture of previous two types",
+                "4 Interrogative word order",
+                "5 Absence of declarative morphemes",
+                "6 Interrogative intonation only",
+                "7 No interrogative-declarative distinction"
+            ]
+        },
+        "fid": 118,
+        "size": 7,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "117A Predicative Possession",
+            "label2vid": {
+                "1 Locational": 0,
+                "2 Genitive": 1,
+                "3 Topic": 2,
+                "4 Conjunctional": 3,
+                "5 'Have'": 4
+            },
+            "name": "117A",
+            "orig_idx": 116,
+            "vid2label": [
+                "1 Locational",
+                "2 Genitive",
+                "3 Topic",
+                "4 Conjunctional",
+                "5 'Have'"
+            ]
+        },
+        "fid": 119,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "118A Predicative Adjectives",
+            "label2vid": {
+                "1 Verbal encoding": 0,
+                "2 Nonverbal encoding": 1,
+                "3 Mixed": 2
+            },
+            "name": "118A",
+            "orig_idx": 117,
+            "vid2label": [
+                "1 Verbal encoding",
+                "2 Nonverbal encoding",
+                "3 Mixed"
+            ]
+        },
+        "fid": 120,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "119A Nominal and Locational Predication",
+            "label2vid": {
+                "1 Different": 0,
+                "2 Identical": 1
+            },
+            "name": "119A",
+            "orig_idx": 118,
+            "vid2label": [
+                "1 Different",
+                "2 Identical"
+            ]
+        },
+        "fid": 121,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "120A Zero Copula for Predicate Nominals",
+            "label2vid": {
+                "1 Impossible": 0,
+                "2 Possible": 1
+            },
+            "name": "120A",
+            "orig_idx": 119,
+            "vid2label": [
+                "1 Impossible",
+                "2 Possible"
+            ]
+        },
+        "fid": 122,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Simple Clause",
+            "fullname": "121A Comparative Constructions",
+            "label2vid": {
+                "1 Locational": 0,
+                "2 Exceed": 1,
+                "3 Conjoined": 2,
+                "4 Particle": 3
+            },
+            "name": "121A",
+            "orig_idx": 120,
+            "vid2label": [
+                "1 Locational",
+                "2 Exceed",
+                "3 Conjoined",
+                "4 Particle"
+            ]
+        },
+        "fid": 123,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Complex Sentences",
+            "fullname": "122A Relativization on Subjects",
+            "label2vid": {
+                "1 Relative pronoun": 0,
+                "2 Non-reduction": 1,
+                "3 Pronoun-retention": 2,
+                "4 Gap": 3
+            },
+            "name": "122A",
+            "orig_idx": 121,
+            "vid2label": [
+                "1 Relative pronoun",
+                "2 Non-reduction",
+                "3 Pronoun-retention",
+                "4 Gap"
+            ]
+        },
+        "fid": 124,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Complex Sentences",
+            "fullname": "124A 'Want' Complement Subjects",
+            "label2vid": {
+                "1 Subject is left implicit": 0,
+                "2 Subject is expressed overtly": 1,
+                "3 Both construction types exist": 2,
+                "4 Desiderative verbal affix": 3,
+                "5 Desiderative particle": 4
+            },
+            "name": "124A",
+            "orig_idx": 123,
+            "vid2label": [
+                "1 Subject is left implicit",
+                "2 Subject is expressed overtly",
+                "3 Both construction types exist",
+                "4 Desiderative verbal affix",
+                "5 Desiderative particle"
+            ]
+        },
+        "fid": 125,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Complex Sentences",
+            "fullname": "125A Purpose Clauses",
+            "label2vid": {
+                "1 Balanced": 0,
+                "2 Balanced/deranked": 1,
+                "3 Deranked": 2
+            },
+            "name": "125A",
+            "orig_idx": 124,
+            "vid2label": [
+                "1 Balanced",
+                "2 Balanced/deranked",
+                "3 Deranked"
+            ]
+        },
+        "fid": 126,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Complex Sentences",
+            "fullname": "126A 'When' Clauses",
+            "label2vid": {
+                "1 Balanced": 0,
+                "2 Balanced/deranked": 1,
+                "3 Deranked": 2
+            },
+            "name": "126A",
+            "orig_idx": 125,
+            "vid2label": [
+                "1 Balanced",
+                "2 Balanced/deranked",
+                "3 Deranked"
+            ]
+        },
+        "fid": 127,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Complex Sentences",
+            "fullname": "127A Reason Clauses",
+            "label2vid": {
+                "1 Balanced": 0,
+                "2 Balanced/deranked": 1,
+                "3 Deranked": 2
+            },
+            "name": "127A",
+            "orig_idx": 126,
+            "vid2label": [
+                "1 Balanced",
+                "2 Balanced/deranked",
+                "3 Deranked"
+            ]
+        },
+        "fid": 128,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "129A Hand and Arm",
+            "label2vid": {
+                "1 Identical": 1,
+                "2 Different": 0
+            },
+            "name": "129A",
+            "orig_idx": 128,
+            "vid2label": [
+                "2 Different",
+                "1 Identical"
+            ]
+        },
+        "fid": 129,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "130A Finger and Hand",
+            "label2vid": {
+                "1 Identical": 1,
+                "2 Different": 0
+            },
+            "name": "130A",
+            "orig_idx": 129,
+            "vid2label": [
+                "2 Different",
+                "1 Identical"
+            ]
+        },
+        "fid": 130,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "131A Numeral Bases",
+            "label2vid": {
+                "1 Decimal": 0,
+                "2 Hybrid vigesimal-decimal": 1,
+                "3 Pure vigesimal": 2,
+                "4 Other base": 3,
+                "5 Extended body-part system": 4,
+                "6 Restricted": 5
+            },
+            "name": "131A",
+            "orig_idx": 130,
+            "vid2label": [
+                "1 Decimal",
+                "2 Hybrid vigesimal-decimal",
+                "3 Pure vigesimal",
+                "4 Other base",
+                "5 Extended body-part system",
+                "6 Restricted"
+            ]
+        },
+        "fid": 131,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "136A M-T Pronouns",
+            "label2vid": {
+                "1 No M-T pronouns": 0,
+                "2 M-T pronouns, paradigmatic": 1,
+                "3 M-T pronouns, non-paradigmatic": 2
+            },
+            "name": "136A",
+            "orig_idx": 135,
+            "vid2label": [
+                "1 No M-T pronouns",
+                "2 M-T pronouns, paradigmatic",
+                "3 M-T pronouns, non-paradigmatic"
+            ]
+        },
+        "fid": 132,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "136B M in First Person Singular",
+            "label2vid": {
+                "1 No m in first person singular": 0,
+                "2 m in first person singular": 1
+            },
+            "name": "136B",
+            "orig_idx": 183,
+            "vid2label": [
+                "1 No m in first person singular",
+                "2 m in first person singular"
+            ]
+        },
+        "fid": 133,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "137A N-M Pronouns",
+            "label2vid": {
+                "1 No N-M pronouns": 0,
+                "2 N-M pronouns, paradigmatic": 1,
+                "3 N-M pronouns, non-paradigmatic": 2
+            },
+            "name": "137A",
+            "orig_idx": 136,
+            "vid2label": [
+                "1 No N-M pronouns",
+                "2 N-M pronouns, paradigmatic",
+                "3 N-M pronouns, non-paradigmatic"
+            ]
+        },
+        "fid": 134,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "137B M in Second Person Singular",
+            "label2vid": {
+                "1 No m in second person singular": 0,
+                "2 m in second person singular": 1
+            },
+            "name": "137B",
+            "orig_idx": 182,
+            "vid2label": [
+                "1 No m in second person singular",
+                "2 m in second person singular"
+            ]
+        },
+        "fid": 135,
+        "size": 1,
+        "type": "bin"
+    },
+    {
+        "annotation": {
+            "area": "Lexicon",
+            "fullname": "138A Tea",
+            "label2vid": {
+                "1 Words derived from Sinitic cha": 0,
+                "2 Words derived from Min Nan Chinese te": 1,
+                "3 Others": 2
+            },
+            "name": "138A",
+            "orig_idx": 137,
+            "vid2label": [
+                "1 Words derived from Sinitic cha",
+                "2 Words derived from Min Nan Chinese te",
+                "3 Others"
+            ]
+        },
+        "fid": 136,
+        "size": 3,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "143A Order of Negative Morpheme and Verb",
+            "label2vid": {
+                "1 NegV": 0,
+                "10 Type 2 / Type 4": 9,
+                "11 Type 3 / Type 4": 10,
+                "12 Type 3 / Negative Infix": 11,
+                "13 OptSingleNeg": 12,
+                "14 ObligDoubleNeg": 13,
+                "15 OptDoubleNeg": 14,
+                "16 OptTripleNeg&ObligDoubleNeg": 15,
+                "17 OptTripleNeg&OptDoubleNeg": 16,
+                "2 VNeg": 1,
+                "3 [Neg-V]": 2,
+                "4 [V-Neg]": 3,
+                "5 Negative Tone": 4,
+                "6 Type 1 / Type 2": 5,
+                "7 Type 1 / Type 3": 6,
+                "8 Type 1 / Type 4": 7,
+                "9 Type 2 / Type 3": 8
+            },
+            "name": "143A",
+            "orig_idx": 171,
+            "vid2label": [
+                "1 NegV",
+                "2 VNeg",
+                "3 [Neg-V]",
+                "4 [V-Neg]",
+                "5 Negative Tone",
+                "6 Type 1 / Type 2",
+                "7 Type 1 / Type 3",
+                "8 Type 1 / Type 4",
+                "9 Type 2 / Type 3",
+                "10 Type 2 / Type 4",
+                "11 Type 3 / Type 4",
+                "12 Type 3 / Negative Infix",
+                "13 OptSingleNeg",
+                "14 ObligDoubleNeg",
+                "15 OptDoubleNeg",
+                "16 OptTripleNeg&ObligDoubleNeg",
+                "17 OptTripleNeg&OptDoubleNeg"
+            ]
+        },
+        "fid": 137,
+        "size": 17,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "143E Preverbal Negative Morphemes",
+            "label2vid": {
+                "1 NegV": 0,
+                "2 [Neg-V]": 1,
+                "3 NegV&[Neg-V]": 2,
+                "4 None": 3
+            },
+            "name": "143E",
+            "orig_idx": 168,
+            "vid2label": [
+                "1 NegV",
+                "2 [Neg-V]",
+                "3 NegV&[Neg-V]",
+                "4 None"
+            ]
+        },
+        "fid": 138,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "143F Postverbal Negative Morphemes",
+            "label2vid": {
+                "1 VNeg": 0,
+                "2 [V-Neg]": 1,
+                "3 VNeg&[V-Neg]": 2,
+                "4 None": 3
+            },
+            "name": "143F",
+            "orig_idx": 142,
+            "vid2label": [
+                "1 VNeg",
+                "2 [V-Neg]",
+                "3 VNeg&[V-Neg]",
+                "4 None"
+            ]
+        },
+        "fid": 139,
+        "size": 4,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144A Position of Negative Word With Respect to Subject, Object, and Verb",
+            "label2vid": {
+                "1 NegSVO": 0,
+                "10 VSNegO": 9,
+                "11 VSONeg": 10,
+                "12 NegVOS": 11,
+                "13 ONegVS": 12,
+                "14 OVNegS": 13,
+                "15 OSVNeg": 14,
+                "16 More than one position": 15,
+                "17 OptSingleNeg": 16,
+                "18 ObligDoubleNeg": 17,
+                "19 OptDoubleNeg": 18,
+                "2 SNegVO": 1,
+                "20 MorphNeg": 19,
+                "21 Other": 20,
+                "3 SVNegO": 2,
+                "4 SVONeg": 3,
+                "5 NegSOV": 4,
+                "6 SNegOV": 5,
+                "7 SONegV": 6,
+                "8 SOVNeg": 7,
+                "9 NegVSO": 8
+            },
+            "name": "144A",
+            "orig_idx": 151,
+            "vid2label": [
+                "1 NegSVO",
+                "2 SNegVO",
+                "3 SVNegO",
+                "4 SVONeg",
+                "5 NegSOV",
+                "6 SNegOV",
+                "7 SONegV",
+                "8 SOVNeg",
+                "9 NegVSO",
+                "10 VSNegO",
+                "11 VSONeg",
+                "12 NegVOS",
+                "13 ONegVS",
+                "14 OVNegS",
+                "15 OSVNeg",
+                "16 More than one position",
+                "17 OptSingleNeg",
+                "18 ObligDoubleNeg",
+                "19 OptDoubleNeg",
+                "20 MorphNeg",
+                "21 Other"
+            ]
+        },
+        "fid": 140,
+        "size": 21,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144B Position of negative words relative to beginning and end of clause and with respect to adjacency to verb",
+            "label2vid": {
+                "1 Beginning, not immed preverbal": 0,
+                "2 Preverbal, not beginning or immed": 1,
+                "3 Immed preverbal": 2,
+                "4 Immed postverbal": 3,
+                "5 Postverbal, not immed or end": 4,
+                "6 End, not immed postverbal": 5
+            },
+            "name": "144B",
+            "orig_idx": 162,
+            "vid2label": [
+                "1 Beginning, not immed preverbal",
+                "2 Preverbal, not beginning or immed",
+                "3 Immed preverbal",
+                "4 Immed postverbal",
+                "5 Postverbal, not immed or end",
+                "6 End, not immed postverbal"
+            ]
+        },
+        "fid": 141,
+        "size": 6,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144D The Position of Negative Morphemes in SVO Languages",
+            "label2vid": {
+                "-1 Undefined": 15,
+                "1 NegSVO": 0,
+                "10 SOV/SOV but SNegVO": 9,
+                "11 Other NegV": 10,
+                "12 Other VNeg": 11,
+                "13 More than one construction": 12,
+                "14 ObligNeg": 13,
+                "15 OptNeg": 14,
+                "2 SNegVO": 1,
+                "3 SVNegO": 2,
+                "4 SVONeg": 3,
+                "5 S[Neg-V]O": 4,
+                "6 S[V-Neg]O": 5,
+                "7 SVO&Tone": 6,
+                "8 VSO but NegSVO": 7,
+                "9 SVO/SOV but SVONeg": 8
+            },
+            "name": "144D",
+            "orig_idx": 166,
+            "vid2label": [
+                "1 NegSVO",
+                "2 SNegVO",
+                "3 SVNegO",
+                "4 SVONeg",
+                "5 S[Neg-V]O",
+                "6 S[V-Neg]O",
+                "7 SVO&Tone",
+                "8 VSO but NegSVO",
+                "9 SVO/SOV but SVONeg",
+                "10 SOV/SOV but SNegVO",
+                "11 Other NegV",
+                "12 Other VNeg",
+                "13 More than one construction",
+                "14 ObligNeg",
+                "15 OptNeg",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 142,
+        "size": 16,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144H NegSVO Order",
+            "label2vid": {
+                "-1 Undefined": 4,
+                "1 NoDoubleNeg": 0,
+                "2 OptDoubleNeg": 1,
+                "3 OnlyWithAnotherNeg": 2,
+                "4 No NegSVO": 3
+            },
+            "name": "144H",
+            "orig_idx": 176,
+            "vid2label": [
+                "1 NoDoubleNeg",
+                "2 OptDoubleNeg",
+                "3 OnlyWithAnotherNeg",
+                "4 No NegSVO",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 143,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144I SNegVO Order",
+            "label2vid": {
+                "-1 Undefined": 8,
+                "1 Word&NoDoubleNeg": 0,
+                "2 Prefix&NoDoubleNeg": 1,
+                "3 Word&OptDoubleNeg": 2,
+                "4 Prefix&OptDoubleNeg": 3,
+                "5 Word&OnlyWithAnotherNeg": 4,
+                "6 Prefix&OnlyWithAnotherNeg": 5,
+                "7 Type 1 / Type 2": 6,
+                "8 No SNegVO": 7
+            },
+            "name": "144I",
+            "orig_idx": 155,
+            "vid2label": [
+                "1 Word&NoDoubleNeg",
+                "2 Prefix&NoDoubleNeg",
+                "3 Word&OptDoubleNeg",
+                "4 Prefix&OptDoubleNeg",
+                "5 Word&OnlyWithAnotherNeg",
+                "6 Prefix&OnlyWithAnotherNeg",
+                "7 Type 1 / Type 2",
+                "8 No SNegVO",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 144,
+        "size": 9,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144J SVNegO Order",
+            "label2vid": {
+                "-1 Undefined": 7,
+                "1 Word&NoDoubleNeg": 0,
+                "2 Suffix&NoDoubleNeg": 1,
+                "3 Word&OptDoubleNeg": 2,
+                "4 Suffix&OptDoubleNeg": 3,
+                "5 Word&OnlyWithAnotherNeg": 4,
+                "6 Suffix&OnlyWithAnotherNeg": 5,
+                "7 No SVNegO": 6
+            },
+            "name": "144J",
+            "orig_idx": 147,
+            "vid2label": [
+                "1 Word&NoDoubleNeg",
+                "2 Suffix&NoDoubleNeg",
+                "3 Word&OptDoubleNeg",
+                "4 Suffix&OptDoubleNeg",
+                "5 Word&OnlyWithAnotherNeg",
+                "6 Suffix&OnlyWithAnotherNeg",
+                "7 No SVNegO",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 145,
+        "size": 8,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144K SVONeg Order",
+            "label2vid": {
+                "-1 Undefined": 4,
+                "1 NoDoubleNeg": 0,
+                "2 OptDoubleNeg": 1,
+                "3 OnlyWithAnotherNeg": 2,
+                "4 No SVONeg": 3
+            },
+            "name": "144K",
+            "orig_idx": 161,
+            "vid2label": [
+                "1 NoDoubleNeg",
+                "2 OptDoubleNeg",
+                "3 OnlyWithAnotherNeg",
+                "4 No SVONeg",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 146,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144L The Position of Negative Morphemes in SOV Languages",
+            "label2vid": {
+                "-1 Undefined": 23,
+                "1 NegSOV": 0,
+                "10 SVO but SO[V-Neg]": 9,
+                "11 SVO but SO[Neg-V]": 10,
+                "12 SVO/SOV but SNegOV": 11,
+                "13 SVO/SOV but SOVNeg": 12,
+                "14 Other NegV": 13,
+                "15 More than one construction": 14,
+                "16 ObligDoubleNeg": 15,
+                "17 OptDoubleNeg": 16,
+                "18 SV&OV&NegV": 17,
+                "19 SV&OV&VNeg": 18,
+                "2 SNegOV": 1,
+                "20 SV&OV&[Neg-V]": 19,
+                "21 SV&OV&[V-Neg]": 20,
+                "22 SV&OV&ImmedPreverbal": 21,
+                "23 SV&OV&InitialNeg": 22,
+                "3 SONegV": 2,
+                "4 SOVNeg": 3,
+                "5 SO[Neg-V]": 4,
+                "6 SO[V-Neg]": 5,
+                "7 SVO but SNegOV": 6,
+                "8 SVO but SONegV": 7,
+                "9 SVO but SOVNeg": 8
+            },
+            "name": "144L",
+            "orig_idx": 175,
+            "vid2label": [
+                "1 NegSOV",
+                "2 SNegOV",
+                "3 SONegV",
+                "4 SOVNeg",
+                "5 SO[Neg-V]",
+                "6 SO[V-Neg]",
+                "7 SVO but SNegOV",
+                "8 SVO but SONegV",
+                "9 SVO but SOVNeg",
+                "10 SVO but SO[V-Neg]",
+                "11 SVO but SO[Neg-V]",
+                "12 SVO/SOV but SNegOV",
+                "13 SVO/SOV but SOVNeg",
+                "14 Other NegV",
+                "15 More than one construction",
+                "16 ObligDoubleNeg",
+                "17 OptDoubleNeg",
+                "18 SV&OV&NegV",
+                "19 SV&OV&VNeg",
+                "20 SV&OV&[Neg-V]",
+                "21 SV&OV&[V-Neg]",
+                "22 SV&OV&ImmedPreverbal",
+                "23 SV&OV&InitialNeg",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 147,
+        "size": 24,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144P NegSOV Order",
+            "label2vid": {
+                "-1 Undefined": 4,
+                "1 NoDoubleNeg": 0,
+                "2 OptDoubleNeg": 1,
+                "3 OnlyWithAnotherNeg": 2,
+                "4 No NegSOV": 3
+            },
+            "name": "144P",
+            "orig_idx": 146,
+            "vid2label": [
+                "1 NoDoubleNeg",
+                "2 OptDoubleNeg",
+                "3 OnlyWithAnotherNeg",
+                "4 No NegSOV",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 148,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144Q SNegOV Order",
+            "label2vid": {
+                "-1 Undefined": 4,
+                "1 NoDoubleNeg": 0,
+                "2 OptDoubleNeg": 1,
+                "3 OnlyWithAnotherNeg": 2,
+                "4 No SNegOV": 3
+            },
+            "name": "144Q",
+            "orig_idx": 174,
+            "vid2label": [
+                "1 NoDoubleNeg",
+                "2 OptDoubleNeg",
+                "3 OnlyWithAnotherNeg",
+                "4 No SNegOV",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 149,
+        "size": 5,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144R SONegV Order",
+            "label2vid": {
+                "-1 Undefined": 8,
+                "1 Word&NoDoubleNeg": 0,
+                "2 Prefix&NoDoubleNeg": 1,
+                "3 Word&OptDoubleNeg": 2,
+                "4 Prefix&OptDoubleNeg": 3,
+                "5 Word&OnlyWithAnotherNeg": 4,
+                "6 Prefix&OnlyWithAnotherNeg": 5,
+                "7 Type 1 / Type 2": 6,
+                "8 No SONegV": 7
+            },
+            "name": "144R",
+            "orig_idx": 156,
+            "vid2label": [
+                "1 Word&NoDoubleNeg",
+                "2 Prefix&NoDoubleNeg",
+                "3 Word&OptDoubleNeg",
+                "4 Prefix&OptDoubleNeg",
+                "5 Word&OnlyWithAnotherNeg",
+                "6 Prefix&OnlyWithAnotherNeg",
+                "7 Type 1 / Type 2",
+                "8 No SONegV",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 150,
+        "size": 9,
+        "type": "cat"
+    },
+    {
+        "annotation": {
+            "area": "Word Order",
+            "fullname": "144S SOVNeg Order",
+            "label2vid": {
+                "-1 Undefined": 11,
+                "1 Word&NoDoubleNeg": 0,
+                "10 Type 5 / Type 6": 9,
+                "11 NoSOVNeg": 10,
+                "2 Suffix&NoDoubleNeg": 1,
+                "3 Word&OptDoubleNeg": 2,
+                "4 Suffix&OptDoubleNeg": 3,
+                "5 Word&OnlyWithAnotherNeg": 4,
+                "6 Suffix&OnlyWithAnotherNeg": 5,
+                "7 Type 1 / Type 2": 6,
+                "8 Type 1 / Type 6": 7,
+                "9 Type 5 / Type 4": 8
+            },
+            "name": "144S",
+            "orig_idx": 149,
+            "vid2label": [
+                "1 Word&NoDoubleNeg",
+                "2 Suffix&NoDoubleNeg",
+                "3 Word&OptDoubleNeg",
+                "4 Suffix&OptDoubleNeg",
+                "5 Word&OnlyWithAnotherNeg",
+                "6 Suffix&OnlyWithAnotherNeg",
+                "7 Type 1 / Type 2",
+                "8 Type 1 / Type 6",
+                "9 Type 5 / Type 4",
+                "10 Type 5 / Type 6",
+                "11 NoSOVNeg",
+                "-1 Undefined"
+            ]
+        },
+        "fid": 151,
+        "size": 12,
+        "type": "cat"
+    }
+]
