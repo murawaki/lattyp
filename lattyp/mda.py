@@ -489,10 +489,10 @@ class MatrixDecompositionAutologistic(object):
         for l in llist:
             logprob0, logprob1 = (0.0, 0.0)
             if not self.only_alphas:
-                vcount = np.bincount(self.zmat[k,self.vnet[l]], minlength=2)
+                vcount = np.bincount(zvect[self.vnet[l]], minlength=2)
                 logprob0 += v * vcount[0]
                 logprob1 += v * vcount[1]
-                hcount = np.bincount(self.zmat[k,self.hnet[l]], minlength=2)
+                hcount = np.bincount(zvect[self.hnet[l]], minlength=2)
                 logprob0 += h * hcount[0]
                 logprob1 += h * hcount[1]
             logprob1 += a
